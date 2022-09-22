@@ -24,8 +24,8 @@
 !/wp-content/themes
 /wp-content/themes/*
 
-!/wp-content/themes/perpetual-2019
-!/wp-content/themes/perpetual-2022
+!/wp-content/themes/gold-2023
+!/wp-content/themes/twentytwentytwo
 
 node_modules
 config.codekit3
