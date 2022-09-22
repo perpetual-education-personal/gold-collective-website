@@ -1,5 +1,2 @@
-<?php
-// Silence is golden.
-?>
 
-<h1>TEST</h1>
+<h1>Gold Collective theme 2023</h1>
