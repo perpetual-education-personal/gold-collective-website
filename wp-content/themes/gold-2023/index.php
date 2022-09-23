@@ -23,9 +23,9 @@
     //     echo "Single album";
     // }
 
-    if (is_404()) {
-        include('templates/pages/page-not-found.php');
-    }
+    // if (is_404()) {
+    //     include('templates/pages/page-not-found.php');
+    // }
 
     ?>
 
