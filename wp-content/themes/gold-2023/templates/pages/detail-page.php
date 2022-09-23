@@ -11,14 +11,6 @@ if ($portrait) {
 
 ?>
 
-<!-- <header>
-    <inner-column>
-
-≈
-
-    </inner-column>
-</header> -->
-
 <section class="page-section manga-overview">
     <inner-column>
         <picture class='portrait'>

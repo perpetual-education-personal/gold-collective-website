@@ -10,7 +10,7 @@
             $loop = new WP_Query($args);
 
             while ($loop->have_posts()) : $loop->the_post();
-                include(getFile('templates/modules/album-card/template.php'));
+                include(getFile('templates/modules/card-template/template.php'));
             endwhile;
 
             wp_reset_postdata(); ?>
