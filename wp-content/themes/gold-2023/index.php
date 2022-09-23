@@ -7,13 +7,13 @@
         include('templates/pages/home.php');
     }
 
-    // if (is_page('albums')) {
-    //     include('templates/pages/albums.php');
-    // }
+    if (is_page('highlights')) {
+        include('templates/pages/highlights.php');
+    }
 
-    // if (is_singular('album')) {
-    //     echo "Single album";
-    // }
+    if (is_singular('highlight')) {
+        echo "Single highlight";
+    }
 
     // if (is_page('artists')) {
     //     include('templates/pages/artists.php');
