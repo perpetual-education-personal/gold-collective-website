@@ -2,3 +2,9 @@
 @import 'css/setup.css';
 @import 'css/reset.css';
 @import 'css/typography.css';
+
+
+
+body {
+	background-color: yellow;
+}
