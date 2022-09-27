@@ -1,0 +1,23 @@
+@media(min-width: 600px) {
+    module-six {
+        grid-template-rows: repeat(6, 1fr);
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+
+        text-content {
+            grid-column: span 9;
+            grid-row: 1 / 2;
+        }
+
+        figure.one {
+            grid-column: 11 / 25;
+            grid-row: 2 / 7;
+            align-self: start;
+            max-width: 572px;
+        }
+    }
+
+
+
+}

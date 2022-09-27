@@ -1,0 +1,83 @@
+picture,
+logo,
+svg,
+figure {
+    display: block;
+}
+
+
+.navbar {
+    border: 3px solid orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hamburger-menu {
+    border: 3px solid green;
+    padding: 30px;
+}
+
+
+.gold-collective {
+    width: 140px;
+    padding: 20px;
+}
+
+.hamburger-menu {
+    flex: 1;
+}
+
+module-nine {
+
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    figcaption p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width:700px) {
+
+    module-nine {
+        grid-template-columns: repeat(12, 1fr);
+
+        figure.one {
+            display: none;
+        }
+
+        .navbar {
+            grid-row: 1 / span 1;
+            grid-column: 1 / span 12;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border: 3px dashed black;
+            background-image: url('https://peprojects.dev/images/landscape.jpg');
+            gap: 20vw;
+            padding-bottom: 400px;
+            background-repeat: none;
+            background-position: center;
+        }
+
+        .hamburger-menu {
+            display: flex;
+            gap: 20px;
+            justify-content: space-evenly;
+        }
+
+        svg {
+            fill: white;
+        }
+
+        .module-text {
+            font-size: 20px;
+            margin-top: 20px;
+            border: 3px solid red;
+            grid-row: 2 / span 12;
+            grid-column: 1 / span 6;
+        }
+    }
+}
