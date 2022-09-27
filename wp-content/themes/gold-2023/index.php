@@ -7,6 +7,10 @@
         include('templates/pages/home.php');
     }
 
+    if (is_page('style-guide')) {
+        include('templates/pages/style-guide.php');
+    }
+
     if (is_page('highlights')) {
         include('templates/pages/highlights.php');
     }

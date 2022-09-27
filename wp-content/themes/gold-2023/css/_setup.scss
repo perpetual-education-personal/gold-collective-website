@@ -1,5 +1,6 @@
 html {
 	box-sizing: border-box;
+	--column-width: 1440px;
 }
 
 *,
@@ -34,10 +35,11 @@ main {
 inner-column {
 	display: block;
 	width: 100%;
+
+	padding: 1rem;
+	max-width: var(--column-width);
 	margin-right: auto;
 	margin-left: auto;
-	padding: 2rem 1rem;
-	max-width: 1200px;
 }
 
 article-grid,

@@ -1,1 +1,54 @@
 @import '../templates/modules/site-menu/_style.scss';
+@import '../templates/modules/module-one/_style.scss';
+@import '../templates/modules/module-two/_style.scss';
+@import '../templates/modules/module-three/_style.scss';
+@import '../templates/modules/module-four/_style.scss';
+@import '../templates/modules/module-five/_style.scss';
+@import '../templates/modules/module-six/_style.scss';
+@import '../templates/modules/module-seven/_style.scss';
+@import '../templates/modules/module-eight/_style.scss';
+@import '../templates/modules/module-nine/_style.scss';
+@import '../templates/modules/module-ten/_style.scss';
+
+
+h2+p {
+    margin-top: .5rem;
+}
+
+picture img {
+    opacity: 0;
+}
+
+figure.one picture {
+    background-color: #f75e5e;
+}
+
+figure.two picture {
+    background-color: #feb839;
+}
+
+figure.three picture {
+    background-color: #ede921;
+}
+
+.base-template {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 500px) {
+    .base-template {
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    .base-template {
+        grid-template-columns: repeat(24, 1fr);
+    }
+
+
+}
