@@ -9,7 +9,7 @@
     <meta name='description' content="- - -">
     <meta property="og:image" content="https://peprojects.dev/alpha-4/jesse/projects/manga/images/reeds.jpg">
 
-    <?php wp_head(); ?>
+    <?php wp_head(); //wp function to insert header components?> 
 </head>
 
 <body <?php body_class(); ?>>
