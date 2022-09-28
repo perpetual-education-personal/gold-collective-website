@@ -5,7 +5,7 @@ function getFile($path) {
 }
 
 
-/* Disable WordPress Admin Bar for all users */
+// disable admin bar
 add_filter('show_admin_bar', '__return_false');
 
 
@@ -16,8 +16,12 @@ function gc_enqueue_styles() {
 add_action('wp_enqueue_scripts', 'gc_enqueue_styles');
 
 
-// load css into the website's front-end (via wp_footer)
+// (function name says what it is ;)
 function register_my_menu() {
     register_nav_menu('site-menu', __('Site menu'));
 }
 add_action('init', 'register_my_menu');
+
+
+// load css into the website's front-end (via wp_footer)
+// ?
