@@ -19,6 +19,10 @@
         include('templates/pages/highlights.php');
     }
 
+    if (is_page('weddings')) {
+        include('templates/pages/weddings.php');
+    }
+
 
     // DETAIL PAGES
 
