@@ -12,7 +12,7 @@
 
     <?php 
         wp_head(); 
-        // WP function to include any styles, scripts, or things after* page load
+        // WP function to include any styles, scripts, or things before* page load
     ?>
 </head>
 
