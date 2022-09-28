@@ -8,10 +8,9 @@
 
 <?php 
     wp_footer();
-    // WP function to include any scripts or things after page loag
+    // WP function to include any scripts or things after* page load
 ?>
 
 
 </body>
-
 </html>

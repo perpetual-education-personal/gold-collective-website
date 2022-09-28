@@ -9,7 +9,10 @@
     <meta name='description' content="test test">
     <meta property="og:image" content=" <?php echo get_template_directory_uri() . '/images/meta.png' ?>">
 
-    <?php wp_head(); //wp function to insert header components?> 
+    <?php 
+        wp_head(); 
+        // WP function to include any styles, scripts, or things after* page load
+    ?>
 </head>
 
 <body <?php body_class(); ?>>
