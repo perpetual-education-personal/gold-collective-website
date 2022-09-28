@@ -1,3 +1,10 @@
+module-four {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 20px;
+}
+
+
 
 @media (max-width: 499px) {
 	figure.one {
@@ -8,7 +15,7 @@
 @media (min-width: 500px) {
 	module-four {
 		grid-template-columns: repeat(12, 1fr);
-
+}
 		.intro {
 			grid-column: 1 / span 5;
 		}
@@ -26,8 +33,6 @@
 			grid-row: 7 / 11;
 			grid-column: 8 / span 6;
 		}
-	}
-
 }
 
 
@@ -35,7 +40,7 @@
 
 	module-four {
 		grid-template-columns: repeat(24, 1fr);
-	
+	}
 		.intro {
 			margin-top: 40px;
 			grid-column: 1 / 10;
@@ -55,8 +60,6 @@
 			grid-column: 15/ span 8;
 		}
 	}
-
-}
 
 @media (min-width: 1650px) {
 

@@ -332,6 +332,12 @@ module-three figure.one {
   grid-column: 1/25;
 }
 
+module-four {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
 @media (max-width: 499px) {
   figure.one {
     max-width: 80%;
@@ -341,18 +347,18 @@ module-three figure.one {
   module-four {
     grid-template-columns: repeat(12, 1fr);
   }
-  module-four .intro {
+  .intro {
     grid-column: 1/span 5;
   }
-  module-four figure.one {
+  figure.one {
     grid-row: 2/8;
     grid-column: 1/7;
   }
-  module-four figure.two {
+  figure.two {
     grid-row: 9/12;
     grid-column: 1/span 5;
   }
-  module-four figure.three {
+  figure.three {
     grid-row: 7/11;
     grid-column: 8/span 6;
   }
@@ -361,20 +367,20 @@ module-three figure.one {
   module-four {
     grid-template-columns: repeat(24, 1fr);
   }
-  module-four .intro {
+  .intro {
     margin-top: 40px;
     grid-column: 1/10;
   }
-  module-four figure.one {
+  figure.one {
     grid-column: 11/span 8;
     grid-row: 1/span 3;
     margin-bottom: 60px;
   }
-  module-four figure.two {
+  figure.two {
     grid-row: 5/span 3;
     grid-column: 3/span 9;
   }
-  module-four figure.three {
+  figure.three {
     grid-row: 4/span 3;
     grid-column: 15/span 8;
   }

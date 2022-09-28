@@ -3,7 +3,7 @@
 <section>
     <inner-column>
 
-        <module-four>
+        <module-four class="base-template">
             <div class='intro'>
                 <h2 class='attention-voice'>Heading for this section</h2>
                 
