@@ -1,5 +1,6 @@
-@import "reset";
-@import "variables";
-@import "setup";
-@import "typography";
+@import "base/reset";
+@import "base/variables";
+@import "base/mixins";
+@import "base/setup";
+@import "base/type=patterns";
 @import "modules";

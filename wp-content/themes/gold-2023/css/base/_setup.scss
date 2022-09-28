@@ -1,6 +1,5 @@
 html {
 	box-sizing: border-box;
-	--column-width: 1440px;
 }
 
 *,
@@ -23,9 +22,6 @@ body {
 
 	background-color: var(--page);
 	color: var(--ink);
-
-	font-family: 'Poppins', sans-serif;
-	font-weight: 400;
 }
 
 main {
@@ -35,11 +31,10 @@ main {
 inner-column {
 	display: block;
 	width: 100%;
-
-	padding: 1rem;
-	max-width: var(--column-width);
 	margin-right: auto;
 	margin-left: auto;
+	padding: 2rem 1rem;
+	max-width: var(--column-width);
 }
 
 article-grid,
