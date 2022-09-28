@@ -6,7 +6,10 @@
 
 </footer>
 
-<?php wp_footer(); ?>
+<?php 
+    wp_footer();
+    // WP function to include any scripts or things after page loag
+?>
 
 
 </body>
