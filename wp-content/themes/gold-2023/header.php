@@ -8,7 +8,7 @@
     <title><?php echo wp_get_document_title(); ?></title>
 
     <meta name='description' content="This is the Gold Collective website.">
-    <meta property="og:image" content=" <?php echo get_template_directory_uri() . '/images/meta.png' ?>">
+    <meta property="og:image" content=" <?php echo get_template_directory_uri() . '/images/meta/meta.png' ?>">
 
     <?php 
         wp_head(); 
