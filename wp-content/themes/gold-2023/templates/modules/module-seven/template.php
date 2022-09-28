@@ -2,7 +2,7 @@
     <inner-column>
         <module-seven>
             <text-content>
-                <h2>All in the details</h2>
+                <h2>All in the details !!!</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rerum delectus perferendis? Provident optio culpa porro ducimus non dignissimos perspiciatis corporis perferendis. Illo tempore animi ipsam ea ipsa eaque dolorum.</p>
             </text-content>
 
