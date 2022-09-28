@@ -480,7 +480,8 @@ module-seven {
   display: grid;
   grid-template-columns: 1fr;
   gap: 3px;
-  max-width: 960px;
+  max-width: 960px; /* $note: this should be determined by the parent element/context - and not the child component */
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 module-seven h2 {
   font-weight: 700;
