@@ -1,42 +1,19 @@
 
-
-<section>
+<section class='three'>
     <inner-column>
 
-        <module-four class="base-template">
-            <div class='intro'>
-                <h2 class='attention-voice'>Heading for this section</h2>
-                
-                <p>Little leading paragraph would be here.</p>
-            </div>
+        <module-three class='base-template'>
 
             <figure class='one'>
                 <picture>
                     <img src='https://peprojects.dev/images/portrait.jpg' alt='$todo'>
                 </picture>
                 <figcaption>
-                    <p>Example figure caption here.</p>
+                    <p>Example figure 1 caption here.</p>
                 </figcaption>
             </figure>
-            
-            <figure class='two'>
-                <picture>
-                    <img src='https://peprojects.dev/images/portrait.jpg' alt='$todo'>
-                </picture>
-                <figcaption>
-                    <p>Example figure caption here.</p>
-                </figcaption>
-            </figure>
-            
-            <figure class='three'>
-                <picture>
-                    <img src='https://peprojects.dev/images/portrait.jpg' alt='$todo'>
-                </picture>
-                <figcaption>
-                    <p>Example figure caption here.</p>
-                </figcaption>
-            </figure>
-        </module-four>
+
+        </module-three>
 
     </inner-column>
 </section>
