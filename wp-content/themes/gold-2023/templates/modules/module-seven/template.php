@@ -1,6 +1,5 @@
 <?php
     $intro = get_sub_field('intro'); // 'get' doesn't echo
-
     // this is a pretty clean way to prepare the variables
     // and keep the logic outside of the template (as much as possible)
 ?>
@@ -19,8 +18,6 @@
                 <picture>
                     <img src="https://peprojects.dev/images/portrait.jpg" alt="">
                 </picture>
-
-                <figcaption>Figure one caption</figcaption>
             </figure>
 
             <figure class="two">
@@ -28,7 +25,11 @@
                     <img src="https://peprojects.dev/images/portrait.jpg" alt="">
                 </picture>
 
-                <figcaption>Figure two caption</figcaption>
+                <?php if ( get_sub_field('caption_1')) { ?>
+                    <figcaption>
+                        <?php the_sub_field('caption_1'); ?>
+                    </figcaption>
+                <?php } ?>
             </figure>
 
             <figure class="three">
