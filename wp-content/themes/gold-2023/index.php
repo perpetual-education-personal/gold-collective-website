@@ -11,7 +11,7 @@
         include('templates/pages/home.php');
     }
 
-    if (is_page('style-guide')) {
+    if ( is_page('style-guide') ) {
         include('templates/pages/style-guide.php');
     }
 
