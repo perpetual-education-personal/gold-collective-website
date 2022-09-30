@@ -7,12 +7,12 @@
 <section>
     <inner-column>
 
-        <module-seven>
-            <text-content>
-                <h2><?php the_sub_field('heading'); // 'the' echos ?></h2>
+        <module-seven class="base-template">
+            <div class="module-text">
+                <h2 class="attention-voice"><?php the_sub_field('heading'); // 'the' echos ?></h2>
 
-                <p><?=$intro?></p>
-            </text-content>
+                <p class="intro"><?=$intro?></p>
+            </div>
 
             <figure class="one">
                 <picture>

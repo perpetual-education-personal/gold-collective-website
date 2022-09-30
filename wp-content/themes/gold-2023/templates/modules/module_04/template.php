@@ -1,8 +1,8 @@
 
-<section class='three'>
+<section>
     <inner-column>
 
-        <module-three class='base-template'>
+        <module-four class='base-template'>
 
             <figure class='one'>
                 <picture>
@@ -13,7 +13,7 @@
                 </figcaption>
             </figure>
 
-        </module-three>
+        </module-four>
 
     </inner-column>
 </section>

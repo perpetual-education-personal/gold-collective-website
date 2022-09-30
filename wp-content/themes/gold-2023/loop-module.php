@@ -7,7 +7,7 @@ if (have_rows('page_modules')) {
 
     // echo $module;
 
-    if ( $module == "module_7") { /* if only these were the same naming convention $question */
+    if ( $module == "module_07") { /* if only these were the same naming convention $question */
       include( getFile("templates/modules/module-seven/template.php") );
     }
 
