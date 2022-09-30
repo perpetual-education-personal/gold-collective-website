@@ -1,23 +1,41 @@
-@media(min-width: 600px) {
-    module-six {
-        grid-template-rows: repeat(6, 1fr);
-        max-width: 960px;
-        margin-left: auto;
-        margin-right: auto;
 
-        text-content {
-            grid-column: span 9;
+
+module-six {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
+
+
+    @media(min-width: 500px) {
+            
+        .module-text {
+            grid-column: 1 / 6;
             grid-row: 1 / 2;
+            margin-top: 3vw;
         }
-
-        figure.one {
-            grid-column: 11 / 25;
-            grid-row: 2 / 7;
+        
+        .one {
+            grid-column: 6 / 13;
+            grid-row: 2 / 5;
             align-self: start;
-            max-width: 572px;
         }
     }
 
-
-
+    @media(min-width: 1000px) {
+        
+        .module-text {
+            grid-column: span 9;
+            grid-row: 1 / 2;
+        }
+        
+        .one {
+            grid-column: 11 / 25;
+            grid-row: 2 / 7;
+            align-self: start;
+        }
+    }
 }
+
+
+
