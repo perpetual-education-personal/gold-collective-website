@@ -4,12 +4,16 @@ if (have_rows('page_modules')) {
   while (have_rows('page_modules')) : the_row();
 
     $module = get_row_layout();
+?>
 
-    // echo $module;
+    <section>
+      <inner-column>
 
+        <?php include(getFile("templates/modules/$module/template.php")); ?>
+      </inner-column>
+    </section>
 
-    include(getFile("templates/modules/$module/template.php"));
-
-
+<?php
   endwhile;
 }
+?>

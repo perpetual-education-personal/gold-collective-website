@@ -1,42 +1,34 @@
+<thing-module>
+  <div class='intro'>
+    <h2 class='attention-voice'>Heading for this section</h2>
 
+    <p>Little leading paragraph would be here.</p>
+  </div>
 
-<section>
-  <inner-column>
+  <figure class='one'>
+    <picture>
+      <img src='https://peprojects.dev/images/portrait.jpg' alt='$todo'>
+    </picture>
+    <figcaption>
+      <p>Example figure caption here.</p>
+    </figcaption>
+  </figure>
 
-    <thing-module>
-      <div class='intro'>
-        <h2 class='attention-voice'>Heading for this section</h2>
-        
-        <p>Little leading paragraph would be here.</p>
-      </div>
+  <figure class='two'>
+    <picture>
+      <img src='https://peprojects.dev/images/portrait.jpg' alt='$todo'>
+    </picture>
+    <figcaption>
+      <p>Example figure caption here.</p>
+    </figcaption>
+  </figure>
 
-      <figure class='one'>
-        <picture>
-          <img src='https://peprojects.dev/images/portrait.jpg' alt='$todo'>
-        </picture>
-        <figcaption>
-          <p>Example figure caption here.</p>
-        </figcaption>
-      </figure>
-      
-      <figure class='two'>
-        <picture>
-          <img src='https://peprojects.dev/images/portrait.jpg' alt='$todo'>
-        </picture>
-        <figcaption>
-          <p>Example figure caption here.</p>
-        </figcaption>
-      </figure>
-      
-      <figure class='three'>
-        <picture>
-          <img src='https://peprojects.dev/images/portrait.jpg' alt='$todo'>
-        </picture>
-        <figcaption>
-          <p>Example figure caption here.</p>
-        </figcaption>
-      </figure>
-    </thing-module>
-
-  </inner-column>
-</section>
+  <figure class='three'>
+    <picture>
+      <img src='https://peprojects.dev/images/portrait.jpg' alt='$todo'>
+    </picture>
+    <figcaption>
+      <p>Example figure caption here.</p>
+    </figcaption>
+  </figure>
+</thing-module>
