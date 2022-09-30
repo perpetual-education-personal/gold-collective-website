@@ -500,7 +500,7 @@ module-seven p {
     align-self: start;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   module-seven {
     position: relative;
     grid-template-columns: repeat(24, 1fr);
