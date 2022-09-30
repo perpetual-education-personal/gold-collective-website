@@ -1,17 +1,20 @@
 <?php get_header() ?>
 
+<?php include(getFile('loop-variables.php')); ?>
+
+
 <main class="page-content">
 
 
     <?php
 
     // INDEX PAGES
-    
+
     if (is_page('home')) {
         include('templates/pages/home.php');
     }
 
-    if ( is_page('style-guide') ) {
+    if (is_page('style-guide')) {
         include('templates/pages/style-guide.php');
     }
 

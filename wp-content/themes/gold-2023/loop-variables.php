@@ -15,20 +15,3 @@ $captionTwo = get_sub_field('caption_2');
 $imageThree = get_sub_field('image_3')['url'];
 $altTextThree = get_sub_field('alttext_3');
 $captionThree = get_sub_field('caption_3');
-
-
-?>
-
-
-<module-four class='base-template'>
-
-    <figure class='one'>
-        <picture>
-            <img src='<?= $imageOne ?>' alt='<?= $altTextOne ?>'>
-        </picture>
-        <figcaption>
-            <p><?= $caption ?></p>
-        </figcaption>
-    </figure>
-
-</module-four>
