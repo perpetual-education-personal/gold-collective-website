@@ -1,3 +1,11 @@
+<?php
+    // Reminder: "get_" returns, "the_" echoes
+    $image = get_sub_field('image');
+    $alttext = get_sub_field('alttext');
+    $caption = get_sub_field('caption');
+
+?>
+
 
 <section>
     <inner-column>
@@ -6,10 +14,10 @@
 
             <figure class='one'>
                 <picture>
-                    <img src='https://peprojects.dev/images/portrait.jpg' alt='$todo'>
+                    <img src='<?=$image?>' alt='<?=$alttext?>'>
                 </picture>
                 <figcaption>
-                    <p>Example figure 1 caption here.</p>
+                    <p><?=$caption?></p>
                 </figcaption>
             </figure>
 

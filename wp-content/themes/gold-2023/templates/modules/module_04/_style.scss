@@ -1,6 +1,77 @@
 
 module-four {
 
+	section{
+		padding: 20px 0px;	
+	}
+
+	html {
+		--column-width: 700px;
+	}
+
+	picture {
+		display: block;
+	}
+
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	inner-column {
+		display: block;
+		padding: 0px;
+		max-width: var(--column-width);
+		margin-right: auto;
+		margin-left: auto;
+	/* 	border: 1px solid red; */
+	}
+
+	p {
+		font-size: .9rem;
+		line-height: 1.2;
+	}
+
+	.attention-voice {
+		font-size: 1.5rem;
+		line-height: 1.1;
+	}
+
+	h2 + p {
+		margin-top: .5rem;
+	}
+
+	picture img {
+		opacity: 0;
+		max-height: 95vh;
+	/* 	width:auto; */
+	}
+
+	figure.one picture {
+		background-color: #f75e5e;
+		
+	}
+
+	/* figure.two picture {
+		background-color: #feb839;
+	}
+
+	figure.three picture {
+		background-color: #ede921;
+	}
+
+	figure.four picture {
+		background-color: green;
+	} */
+
+
+	thing-module {
+		display: grid;
+		grid-template-columns: repeat( 24, 1fr);
+		gap: 20px;
+	}
+
 	figure.one {
 		grid-column: 1 / 25;
 		
