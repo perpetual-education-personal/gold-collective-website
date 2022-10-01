@@ -1,4 +1,5 @@
 <module-one class='base-template'>
+
     <div class='module-text'>
         <h2 class='attention-voice'>Heading for this section</h2>
 
@@ -7,7 +8,7 @@
 
     <figure class='one'>
         <picture>
-            <img src='https://peprojects.dev/images/portrait.jpg' alt='$todo'>
+            <img src='https://peprojects.dev/images/portrait.jpg' alt='$todo' loading='lazy'>
         </picture>
         <figcaption>
             <p>Example figure caption here.</p>
@@ -16,7 +17,7 @@
 
     <figure class='two'>
         <picture>
-            <img src='https://peprojects.dev/images/portrait.jpg' alt='$todo'>
+            <img src='https://peprojects.dev/images/portrait.jpg' alt='$todo' loading='lazy'>
         </picture>
         <figcaption>
             <p>Example figure caption here.</p>
@@ -25,7 +26,7 @@
 
     <figure class='three'>
         <picture>
-            <img src='https://peprojects.dev/images/portrait.jpg' alt='$todo'>
+            <img src='https://peprojects.dev/images/portrait.jpg' alt='$todo' loading='lazy'>
         </picture>
         <figcaption>
             <p>Example figure caption here.</p>
