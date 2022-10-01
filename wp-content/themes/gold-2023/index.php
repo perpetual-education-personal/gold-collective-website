@@ -1,15 +1,11 @@
 <?php get_header() ?>
 
-<?php include(getFile('loop-variables.php')); ?>
-
-
 <main class="page-content">
 
 
     <?php
 
     // INDEX PAGES
-
     if (is_page('home')) {
         include('templates/pages/home.php');
     }
@@ -28,7 +24,6 @@
 
 
     // DETAIL PAGES
-
     if (is_singular('highlight')) {
         echo "Single highlight";
     }

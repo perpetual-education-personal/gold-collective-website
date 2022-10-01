@@ -6,6 +6,11 @@ if (have_rows('page_modules')) {
     $module = get_row_layout();
 ?>
 
+
+    <?php include(getFile('loop-variables.php')); ?>
+
+
+
     <section>
       <inner-column>
 
