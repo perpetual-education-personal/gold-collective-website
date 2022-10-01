@@ -1,10 +1,8 @@
-<?php
-if (have_rows('page_modules')) {
+<?php if (have_rows('page_modules')) { ?>
 
-  while (have_rows('page_modules')) : the_row();
-
+  <?php while (have_rows('page_modules')) : the_row(); /* note this alternate syntax */
     $module = get_row_layout();
-?>
+    ?>
 
 
     <?php include(getFile('loop-variables.php')); ?>
@@ -15,10 +13,10 @@ if (have_rows('page_modules')) {
       <inner-column>
 
         <?php include(getFile("templates/modules/$module/template.php")); ?>
+
       </inner-column>
     </section>
 
-<?php
-  endwhile;
-}
-?>
+  <?php endwhile; ?>
+
+<?php } ?>

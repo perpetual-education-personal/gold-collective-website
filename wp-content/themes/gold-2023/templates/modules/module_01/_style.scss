@@ -1,103 +1,97 @@
-@media (max-width: 499px) {
 
-    module-one {
+module-one {
 
-        figure.one {
-            max-width: 80%;
-        }
-    }
-}
+	// default stuff would be here - 
 
-@media (min-width: 500px) {
+	@media (max-width: 499px) {
 
-    module-one {
+		figure.one {
+			max-width: 80%;
+		}
 
-        figure.one {
-            grid-row: 1 / 2;
-            grid-column: 1 / 6;
-        }
-
-        .intro {
-            grid-column: 6 / 9;
-        }
-
-        figure.two {
-            grid-row: 2 / 3;
-            grid-column: 7 / 12;
-            transform: translateY(-50%);
-        }
-
-        figure.three {
-            grid-row: 2 / 3;
-            grid-column: 1 / 7;
-        }
-
-    }
-}
+	}
 
 
-@media (min-width: 700px) {
+	@media (min-width: 500px) {
+
+		figure.one {
+			grid-row: 1 / 2;
+			grid-column: 1 / 6;
+		}
+
+		.intro {
+			grid-column: 6 / 9;
+		}
+
+		figure.two {
+			grid-row: 2 / 3;
+			grid-column: 7 / 12;
+			transform: translateY(-50%);
+		}
+
+		figure.three {
+			grid-row: 2 / 3;
+			grid-column: 1 / 7;
+		}
+
+	}
 
 
+	@media (min-width: 700px) {
 
-    module-one {
+		figure.one {
+			grid-column: 1 / 5;
+		}
 
-        figure.one {
-            grid-column: 1 / 5;
-        }
+		.intro {
+			grid-column: 5 / 8;
+		}
 
-        .intro {
-            grid-column: 5 / 8;
-        }
+		figure.two {
+			grid-column: 7 / 11;
+			transform: translateY(-45%);
+		}
 
-        figure.two {
-            grid-column: 7 / 11;
-            transform: translateY(-45%);
-        }
-    }
-
-}
+	}
 
 
-@media (min-width: 1000px) {
+	@media (min-width: 1000px) {
 
-    module-one {
+		figure.one {
+			grid-column: 1 / 6;
+		}
 
-        figure.one {
-            grid-column: 1 / 6;
-        }
+		.intro {
+			grid-column: 6 / 9;
+		}
 
-        .intro {
-            grid-column: 6 / 9;
-        }
+		figure.two {
+			grid-row: 2 / 3;
+			grid-column: 6 / 12;
+			transform: translateY(-25%);
+		}
 
-        figure.two {
-            grid-row: 2 / 3;
-            grid-column: 6 / 12;
-            transform: translateY(-25%);
-        }
+		figure.three {
+			grid-row: span 2;
+			grid-column: 14 / 25;
+		}
 
-        figure.three {
-            grid-row: span 2;
-            grid-column: 14 / 25;
-        }
-    }
+	}
 
-}
 
-@media (min-width: 1650px) {
+	@media (min-width: 1650px) {
 
-    module-one {
+		figure.one {
+			transform: translateX(-100px);
+			transition: 1s;
+		}
 
-        figure.one {
-            transform: translateX(-100px);
-            transition: 1s;
-        }
+		.intro {
+			transform: translateX(-100px);
+			transition: 1s;
+		}
 
-        .intro {
-            transform: translateX(-100px);
-            transition: 1s;
-        }
-    }
+	}
+
 
 }
