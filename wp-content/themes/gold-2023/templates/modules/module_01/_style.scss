@@ -1,16 +1,18 @@
-@media (max-width: 499px) {
 
-    module-one {
+module-one {
+
+    // default stuff would be here - 
+
+    @media (max-width: 499px) {
 
         figure.one {
             max-width: 80%;
         }
+
     }
-}
 
-@media (min-width: 500px) {
 
-    module-one {
+    @media (min-width: 500px) {
 
         figure.one {
             grid-row: 1 / 2;
@@ -33,14 +35,9 @@
         }
 
     }
-}
 
 
-@media (min-width: 700px) {
-
-
-
-    module-one {
+    @media (min-width: 700px) {
 
         figure.one {
             grid-column: 1 / 5;
@@ -54,14 +51,11 @@
             grid-column: 7 / 11;
             transform: translateY(-45%);
         }
+
     }
 
-}
 
-
-@media (min-width: 1000px) {
-
-    module-one {
+    @media (min-width: 1000px) {
 
         figure.one {
             grid-column: 1 / 6;
@@ -81,13 +75,11 @@
             grid-row: span 2;
             grid-column: 14 / 25;
         }
+
     }
 
-}
 
-@media (min-width: 1650px) {
-
-    module-one {
+    @media (min-width: 1650px) {
 
         figure.one {
             transform: translateX(-100px);
@@ -98,6 +90,8 @@
             transform: translateX(-100px);
             transition: 1s;
         }
+
     }
+
 
 }
