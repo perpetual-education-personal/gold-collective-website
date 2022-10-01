@@ -1,16 +1,7 @@
 <?php get_header() ?>
 
-<<<<<<< HEAD
-<main class="page-content">
-
-
-    <?php
-=======
-<?php include(getFile('loop-variables.php')); ?>
-
 
 <?php
->>>>>>> ced087c4839c377380d387a843c8b9246f2bb834
 
     // INDEX PAGES
     if (is_page('home')) {
