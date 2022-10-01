@@ -1,5 +1,5 @@
 
-</module-one>
+<module-one>
 
 	<div class='module-text'>
 		<h2 class='attention-voice'><?=$heading?></h2>
