@@ -23,3 +23,6 @@
             <?php include('templates/modules/site-menu/template.php') ?>
         </inner-column>
     </header>
+
+    <main class="page-content">
+        <!-- page content -->

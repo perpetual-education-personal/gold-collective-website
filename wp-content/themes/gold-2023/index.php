@@ -3,10 +3,7 @@
 <?php include(getFile('loop-variables.php')); ?>
 
 
-<main class="page-content">
-
-
-    <?php
+<?php
 
     // INDEX PAGES
 
@@ -33,8 +30,7 @@
         echo "Single highlight";
     }
 
-    ?>
+?>
 
-</main>
 
 <?php get_footer() ?>

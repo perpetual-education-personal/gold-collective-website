@@ -1,16 +1,19 @@
-<footer>
-    <inner-column>
-        <h3>This is a footer</h3>
-    </inner-column>
+
+        <!-- page content -->
+    </main>
+
+    <footer>
+        <inner-column>
+            <h3>This is a footer</h3>
+        </inner-column>
 
 
-</footer>
+    </footer>
 
-<?php 
-    wp_footer();
-    // WP function to include any scripts or things after* page load
-?>
-
+    <?php 
+        wp_footer();
+        // WP function to include any scripts or things after* page load
+    ?>
 
 </body>
 </html>
