@@ -14,13 +14,13 @@ $intro = get_sub_field('intro'); // 'get' doesn't echo
 
     <figure class="one">
         <picture>
-            <img src="https://peprojects.dev/images/portrait.jpg" alt="">
+            <img src="https://peprojects.dev/images/portrait.jpg" alt="" loading='lazy'>
         </picture>
     </figure>
 
     <figure class="two">
         <picture>
-            <img src="https://peprojects.dev/images/portrait.jpg" alt="">
+            <img src="https://peprojects.dev/images/portrait.jpg" alt="" loading='lazy'>
         </picture>
 
         <?php if (get_sub_field('caption_1')) { ?>
@@ -32,7 +32,7 @@ $intro = get_sub_field('intro'); // 'get' doesn't echo
 
     <figure class="three">
         <picture>
-            <img src="https://peprojects.dev/images/portrait.jpg" alt="">
+            <img src="https://peprojects.dev/images/portrait.jpg" alt="" loading='lazy'>
         </picture>
 
         <figcaption>Figure three caption</figcaption>

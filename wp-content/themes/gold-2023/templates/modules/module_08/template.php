@@ -4,7 +4,7 @@
 
     <figure class='one'>
         <picture>
-            <img src='https://peprojects.dev/images/landscape.jpg' alt='$todo'>
+            <img src='https://peprojects.dev/images/landscape.jpg' alt='$todo' loading='lazy'>
         </picture>
 
     </figure>

@@ -7,7 +7,7 @@
 
     <figure class="one">
         <picture>
-            <img src="https://peprojects.dev/images/portrait.jpg">
+            <img src="https://peprojects.dev/images/portrait.jpg" loading='lazy'>
         </picture>
         <figcaption>Figcaption text.</figcaption>
     </figure>

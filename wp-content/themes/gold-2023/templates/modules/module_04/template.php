@@ -2,7 +2,7 @@
 
     <figure class='one'>
         <picture>
-            <img src='<?= $imageOne ?>' alt='<?= $altTextOne ?>'>
+            <img src='<?= $imageOne ?>' alt='<?= $altTextOne ?>' loading='lazy'>
         </picture>
         <figcaption>
             <p><?= $captionOne ?></p>
