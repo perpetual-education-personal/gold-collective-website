@@ -5,9 +5,9 @@ $heading = get_sub_field('heading');
 $intro = get_sub_field('intro');
 
 $link = get_sub_field('link');
-$link_url = $link['url'];
-$link_title = $link['title'];
-$link_target = $link['target'];
+// $link_url = $link['url'];
+// $link_title = $link['title'];
+// $link_target = $link['target'];
 
 
 $imageOne = get_sub_field('image_1')['url'] ?? null;
