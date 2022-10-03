@@ -1,10 +1,10 @@
 <?php
 // Reminder: "get_" returns, "the_" echoes
 
-$moduleHeading = get_sub_field('module_heading');
-
 $heading = get_sub_field('heading');
 $intro = get_sub_field('intro');
+
+$cta = get_sub_field('cta');
 
 $imageOne = get_sub_field('image_1')['url'] ?? null;
 $altTextOne = get_sub_field('alttext_1');
