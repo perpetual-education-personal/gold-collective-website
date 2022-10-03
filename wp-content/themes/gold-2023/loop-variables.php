@@ -1,6 +1,8 @@
 <?php
 // Reminder: "get_" returns, "the_" echoes
 
+$moduleHeading = get_sub_field('module_heading');
+
 $heading = get_sub_field('heading');
 $intro = get_sub_field('intro');
 
