@@ -5,7 +5,7 @@ $heading = get_sub_field('heading');
 $intro = get_sub_field('intro');
 
 $link = get_sub_field('link');
-// $link_url = $link['url'];
+$link_url = $link['url'];
 // $link_title = $link['title'];
 // $link_target = $link['target'];
 
