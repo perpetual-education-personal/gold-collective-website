@@ -1,34 +1,35 @@
 <module-three class="base-template">
     <div class='module-text'>
-        <h2 class='attention-voice'>Next Part of the Day</h2>
+        <h1><?=$moduleHeading?></h1>
+        <h2 class='attention-voice'><?=$heading?></h2>
 
-        <p class="intro">Photography is a lot like love - you can follow all the rules, but you won't find something truly beautiful unless you go with your gut.</p>
+        <p class="intro"><?=$intro?></p>
     </div>
 
     <figure class='one'>
         <picture>
-            <img src='https://peprojects.dev/images/portrait.jpg' alt='$todo' loading='lazy'>
+            <img src='<?=$imageOne?>' alt='<?=$altTextOne?>' loading='lazy'>
         </picture>
         <figcaption>
-            <p>Example figure 1 caption here.</p>
+            <p><?=$captionOne?></p>
         </figcaption>
     </figure>
 
     <figure class='two'>
         <picture>
-            <img src='https://peprojects.dev/images/portrait.jpg' alt='$todo' loading='lazy'>
+            <img src='<?=$imageTwo?>' alt='<?=$altTextTwo?>' loading='lazy'>
         </picture>
         <figcaption>
-            <p>Example figure 2 caption here.</p>
+            <p><?=$captionTwo?></p>
         </figcaption>
     </figure>
 
     <figure class='three'>
         <picture>
-            <img src='https://peprojects.dev/images/portrait.jpg' alt='$todo' loading='lazy'>
+            <img src='<?=$imageThree?>' alt='<?=$altTextThree?>' loading='lazy'>
         </picture>
         <figcaption>
-            <p>Example figure 3 caption here.</p>
+            <p><?=$captionThree?></p>
         </figcaption>
     </figure>
 
