@@ -1,6 +1,5 @@
 <module-three class="base-template">
     <div class='module-text'>
-        <h1><?=$moduleHeading?></h1>
         <h2 class='attention-voice'><?=$heading?></h2>
 
         <p class="intro"><?=$intro?></p>

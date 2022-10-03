@@ -1,4 +1,7 @@
 <module-eight class="base-template">
+
+    <h1><?=$heading?></h1>
+
     <h2 class='attention-voice'>What we do</h2>
 
 
