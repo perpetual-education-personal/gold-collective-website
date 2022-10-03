@@ -4,7 +4,11 @@
 $heading = get_sub_field('heading');
 $intro = get_sub_field('intro');
 
-$cta = get_sub_field('cta');
+$link = get_sub_field('cta');
+$link_url = $link['url'];
+$link_title = $link['title'];
+$link_target = $link['target'] ? $link['target'] : '_self';
+
 
 $imageOne = get_sub_field('image_1')['url'] ?? null;
 $altTextOne = get_sub_field('alttext_1');
