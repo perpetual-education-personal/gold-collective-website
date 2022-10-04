@@ -1,4 +1,4 @@
-<module-four class='base-template'>
+picture<module-four class='base-template'>
 
     <figure class='one'>
         <h2><?=$heading?></h2>
