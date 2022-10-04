@@ -1,7 +1,18 @@
+@media (min-width: 700px) {
+    module-three.base-template {
+        grid-template-columns: repeat(24, 1fr);
+        gap: 20px;
+    }
+}
+
 module-three {
 
     @media (min-width: 500px) {
 
+        .base-template {
+            grid-template-columns: repeat(24, 1fr);
+            gap: 20px;
+        }
         
         .module-text {
             grid-row: 1 / 2;
@@ -31,10 +42,15 @@ module-three {
 
 
     @media (min-width: 700px) {
-               
+        
+        .base-template {
+            grid-template-columns: repeat(24, 1fr);
+            gap: 20px;
+        }
+
         .module-text {
             grid-column: 1 / 10;
-            transform: translateY(40%);
+            transform: translateY(20%);
         }
         
         figure.one {
