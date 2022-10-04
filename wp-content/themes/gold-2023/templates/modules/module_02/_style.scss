@@ -17,19 +17,15 @@ module-two {
         background-color: limegreen;
     }
 
-    figure.three {
-        display: none;
-    }
 }
 
 @media (min-width: 500px) {
 
     module-two {
 
-        grid-template-rows: repeat(3, auto);
+        grid-template-rows: auto auto 1fr;
 
         figcaption {
-            display: block;
             margin-top: 10px;
         }
 
@@ -57,14 +53,12 @@ module-two {
         figure.three {
             display: block;
             order: 3;
-            grid-row: 3;
+            grid-row: 2/ span 2;
+            margin-top: 60%;
+            align-self: center;
             grid-column: 7/ span 6;
-            transform: translatey(-50%);
         }
 
-        figure.three figcaption {
-            display: none;
-        }
     }
 }
 
@@ -76,13 +70,11 @@ module-two {
 
         figure.one {
             grid-column: 1/ span 12;
-            grid-row: 4/ span 3;
             transform: translatey(100px);
         }
 
         figure.two {
             grid-column: 1/ span 19;
-            grid-row: 1/ span 3;
 
         }
 
@@ -101,8 +93,6 @@ module-two {
 
         figure.three {
             grid-column: 15 / span 10;
-            grid-row: 6 / span 3;
-            transform: translatey(100px);
 
         }
 

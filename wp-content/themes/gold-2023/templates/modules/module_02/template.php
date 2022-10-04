@@ -22,9 +22,12 @@
 		<picture>
 			<img src='<?= $imageThree ?>' alt='<?= $altTextThree ?>' loading='lazy'>
 		</picture>
-		<figcaption>
-			<p><?= $captionThree ?></p>
-		</figcaption>
+		<?php if ($captionThree) { ?>
+			<figcaption>
+				<p><?= $captionThree ?></p>
+			</figcaption>
+
+		<?php } ?>
 	</figure>
 
 </module-two>
