@@ -385,66 +385,18 @@ module-two figure.three {
   }
 }
 
-module-four {
-  /* figure.two picture {
-  	background-color: #feb839;
+@media (min-width: 500px) {
+  module-four figure.one {
+    grid-column: 1/13;
   }
-
-  figure.three picture {
-  	background-color: #ede921;
+}
+@media (min-width: 1000px) {
+  module-four figure.one {
+    grid-column: 1/25;
   }
-
-  figure.four picture {
-  	background-color: green;
-  } */
-}
-module-four section {
-  padding: 20px 0px;
-}
-module-four html {
-  --column-width: 700px;
-}
-module-four picture {
-  display: block;
-}
-module-four img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-module-four inner-column {
-  display: block;
-  padding: 0px;
-  max-width: var(--column-width);
-  margin-right: auto;
-  margin-left: auto;
-  /* 	border: 1px solid red; */
-}
-module-four p {
-  font-size: 0.9rem;
-  line-height: 1.2;
-}
-module-four .attention-voice {
-  font-size: 1.5rem;
-  line-height: 1.1;
-}
-module-four h2 + p {
-  margin-top: 0.5rem;
-}
-module-four picture img {
-  max-height: 95vh;
-  /* 	width:auto; */
-}
-module-four figure.one picture {
-  background-color: #f75e5e;
-}
-module-four thing-module {
-  display: grid;
-  grid-template-columns: repeat(24, 1fr);
-  gap: 20px;
-}
-module-four figure.one {
-  grid-column: 1/25;
+  module-four picture {
+    max-height: 90vh;
+  }
 }
 
 scroll-container {
@@ -862,18 +814,22 @@ module-eleven figure.two {
   }
 }
 
-@media (min-width: 1650px) {
+/*Dont think this should be site-wide*/
+/*@media (min-width: 1650px) {
   figure.one {
     transition: 1s;
     transform: translateX(-15%);
     grid-row: 1/span 2;
   }
-}
+}*/
+
+
 h2 + p {
   margin-top: 0.5rem;
 }
 
 picture img {
+  opacity: 0;
   mix-blend-mode: multiply;
 }
 
