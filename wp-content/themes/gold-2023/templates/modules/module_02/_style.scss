@@ -1,9 +1,5 @@
 module-two {
 
-    figcaption {
-        display: none;
-    }
-
     figure.two picture {
         aspect-ratio: 14 / 9;
     }
@@ -40,6 +36,7 @@ module-two {
             grid-row: 1;
             grid-column: span 12;
             position: relative;
+            margin-bottom: 80px;
         }
 
         figure.two figcaption {
@@ -70,7 +67,6 @@ module-two {
 
         figure.one {
             grid-column: 1/ span 12;
-            transform: translatey(100px);
         }
 
         figure.two {
@@ -93,9 +89,38 @@ module-two {
 
         figure.three {
             grid-column: 15 / span 10;
+            margin-top: 95%;
 
         }
 
     }
 
+}
+
+
+@media (min-width: 1300px) {
+
+    module-two {
+
+        figure.one {
+            grid-column: 3/ 12;
+        }
+
+        figure.two {
+            grid-column-start: 2;
+            display: flex;
+
+            figcaption {
+                padding-left: 1rem;
+                flex-shrink: 4;
+            }
+
+        }
+
+        figure.three {
+            margin-top: 0;
+            grid-column: 15/ span 8;
+            align-self: baseline;
+        }
+    }
 }

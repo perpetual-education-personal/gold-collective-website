@@ -4,18 +4,24 @@
 		<picture>
 			<img src='<?= $imageOne ?>' alt='<?= $altTextOne ?>' loading='lazy'>
 		</picture>
-		<figcaption>
-			<p><?= $captionOne ?></p>
-		</figcaption>
+		<?php if ($captionOne) { ?>
+			<figcaption>
+				<p><?= $captionOne ?></p>
+			</figcaption>
+
+		<?php } ?>
 	</figure>
 
 	<figure class='two'>
 		<picture>
 			<img src='<?= $imageTwo ?>' alt='<?= $altTextTwo ?>' loading='lazy'>
 		</picture>
-		<figcaption>
-			<p><?= $captionTwo ?></p>
-		</figcaption>
+		<?php if ($captionTwo) { ?>
+			<figcaption>
+				<p><?= $captionTwo ?></p>
+			</figcaption>
+
+		<?php } ?>
 	</figure>
 
 	<figure class='three'>
