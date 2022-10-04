@@ -432,7 +432,6 @@ module-four h2 + p {
   margin-top: 0.5rem;
 }
 module-four picture img {
-  opacity: 0;
   max-height: 95vh;
   /* 	width:auto; */
 }
@@ -875,7 +874,7 @@ h2 + p {
 }
 
 picture img {
-  opacity: 0;
+  mix-blend-mode: multiply;
 }
 
 figure.one picture {
