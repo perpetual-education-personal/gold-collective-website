@@ -25,6 +25,9 @@ module-two {
 @media (min-width: 500px) {
 
     module-two {
+
+        grid-template-rows: repeat(3, auto);
+
         figcaption {
             display: block;
             margin-top: 10px;

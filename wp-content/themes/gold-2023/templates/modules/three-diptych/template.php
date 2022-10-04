@@ -16,7 +16,7 @@
 
 	<figure class='two'>
 		<picture>
-			<img src='https://peprojects.dev/images/portrait.jpg' alt='$todo'>
+			<img src='https://peprojects.dev/images/portrait.jpg' alt='$todo' loading='lazy'>
 		</picture>
 		<figcaption>
 			<p>Example figure caption here.</p>
@@ -25,7 +25,7 @@
 
 	<figure class='three'>
 		<picture>
-			<img src='https://peprojects.dev/images/portrait.jpg' alt='$todo'>
+			<img src='https://peprojects.dev/images/portrait.jpg' alt='$todo' loading='lazy'>
 		</picture>
 		<figcaption>
 			<p>Example figure caption here.</p>

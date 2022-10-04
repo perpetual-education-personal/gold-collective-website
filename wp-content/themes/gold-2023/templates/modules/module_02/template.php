@@ -2,28 +2,28 @@
 
 	<figure class='one'>
 		<picture>
-			<img src='https://peprojects.dev/images/portrait.jpg' alt='$todo'>
+			<img src='<?= $imageOne ?>' alt='<?= $altTextOne ?>' loading='lazy'>
 		</picture>
 		<figcaption>
-			<p>Example figure caption here.</p>
+			<p><?= $captionOne ?></p>
 		</figcaption>
 	</figure>
 
 	<figure class='two'>
 		<picture>
-			<img src='https://peprojects.dev/images/portrait.jpg' alt='$todo'>
+			<img src='<?= $imageTwo ?>' alt='<?= $altTextTwo ?>' loading='lazy'>
 		</picture>
 		<figcaption>
-			<p>Example figure caption here.</p>
+			<p><?= $captionTwo ?></p>
 		</figcaption>
 	</figure>
 
 	<figure class='three'>
 		<picture>
-			<img src='https://peprojects.dev/images/portrait.jpg' alt='$todo'>
+			<img src='<?= $imageThree ?>' alt='<?= $altTextThree ?>' loading='lazy'>
 		</picture>
 		<figcaption>
-			<p>Example figure caption here.</p>
+			<p><?= $captionThree ?></p>
 		</figcaption>
 	</figure>
 
