@@ -1,4 +1,4 @@
-<module-one>
+<module-one class='base-template'>
 
 	<div class='module-text'>
 		<h2 class='attention-voice'><?= $heading ?></h2>
