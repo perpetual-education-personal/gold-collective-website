@@ -814,7 +814,7 @@ module-eleven figure.two {
   }
 }
 
-/*Dont think this should be site-wide*/
+/* Should this be site-wide? */
 /*@media (min-width: 1650px) {
   figure.one {
     transition: 1s;
