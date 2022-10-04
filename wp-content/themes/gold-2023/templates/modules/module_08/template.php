@@ -1,7 +1,8 @@
 <module-eight class="base-template">
 
-    <h2 class='attention-voice'><?=$heading?></h2>
-
+    <div class="intro">
+     <h2 class='attention-voice'><?=$heading?></h2>
+    </div>
 
     <figure class='one'>
         <picture>

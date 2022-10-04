@@ -2,12 +2,12 @@ module-eight {
 
     .intro {
         grid-row: 1 / 2;
-        grid-column: 1 / 3;
+        grid-column: 1 / 2;
     }
 
     figure.one {
         grid-row: 2 / 4;
-        grid-column: 1 / 3;
+        grid-column: 1 / 2;
 
     }
 
@@ -18,15 +18,15 @@ module-eight {
 
     figcaption {
         grid-row: 4;
-        grid-column: 1 /3;
-        font-size: 8px;
+        grid-column: 1 /2;
+        font-size: 12px;
         color: gray;
         transform: translateY(-50%);
         }
 
     .copy {
         grid-row: 5;
-        grid-column: 1 / 3;
+        grid-column: 1 / 2;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -37,6 +37,27 @@ module-eight {
     }
 
     @media (min-width: 500px) {
+        
+        .intro {
+            grid-column: 1 / 12;
+        }
+
+        figure.one {
+            grid-column: 1 / 12;
+
+        }
+
+        figcaption {
+            grid-column: 1 / 12;
+            }
+
+        .copy {
+            grid-column: 1 / 12;
+        }
+        
+    }
+
+    @media (min-width: 700px) {
         
         .base-template {
             grid-column-gap: 10px;
@@ -65,8 +86,7 @@ module-eight {
         
         figcaption {
             grid-row: 3;
-            grid-column: 8 / 12;
-            font-size: 8px;
+            grid-column: 8 / 10;
             color: gray;
             transform: translateY(0);
         }
