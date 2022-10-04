@@ -844,12 +844,8 @@ h2 + p {
   margin-top: 0.5rem;
 }
 
-picture {
-  border: 1px solid black;
-}
-
 picture img {
-  /*opacity: 0;*/
+  opacity: 0;
 }
 
 figure.one picture {
