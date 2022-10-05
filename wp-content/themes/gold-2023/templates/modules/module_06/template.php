@@ -8,12 +8,14 @@
     <figure class="one">
         <picture>
             <img src='<?= $imageOne ?>' alt='<?= $altTextOne ?>' loading='lazy'>
+        </picture>
+            
         <?php if ($captionOne) { ?>
             <figcaption>
                 <p><?= $captionOne ?></p>
             </figcaption>
         <?php } ?>
-        </picture>
+
     </figure>
 
 </module-six>
