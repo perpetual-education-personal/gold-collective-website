@@ -1,40 +1,41 @@
-<?php
-$intro = get_sub_field('intro'); // 'get' doesn't echo
-// this is a pretty clean way to prepare the variables
-// and keep the logic outside of the template (as much as possible)
-?>
-
 <module-seven class="base-template">
     <div class="module-text">
-        <h2 class="attention-voice"><?php the_sub_field('heading'); // 'the' echos 
-                                    ?></h2>
+        <h2 class="attention-voice"><?=$heading?></h2>
 
         <p class="intro"><?= $intro ?></p>
     </div>
 
     <figure class="one">
         <picture>
-            <img src="https://peprojects.dev/images/portrait.jpg" alt="" loading='lazy'>
+            <img src="<?=$imageOne?>" alt="<?=$altTextOne?>" loading='lazy'>
         </picture>
+        <?php if($captionOne) { ?>
+            <figcaption>
+                <p><?=$captionOne?></p>
+            </figcaption>
+        <?php } ?>
     </figure>
 
     <figure class="two">
         <picture>
-            <img src="https://peprojects.dev/images/portrait.jpg" alt="" loading='lazy'>
+            <img src="<?=$imageTwo?>" alt="<?=$altTextTwo?>" loading='lazy'>
         </picture>
-
-        <?php if (get_sub_field('caption_1')) { ?>
+        <?php if($captionTwo) { ?>
             <figcaption>
-                <?php the_sub_field('caption_1'); ?>
+                <p><?=$captionTwo?></p>
             </figcaption>
         <?php } ?>
     </figure>
 
     <figure class="three">
         <picture>
-            <img src="https://peprojects.dev/images/portrait.jpg" alt="" loading='lazy'>
+            <img src="<?=$imageThree?>" alt="<?=$altTextThree?>" loading='lazy'>
         </picture>
-
-        <figcaption>Figure three caption</figcaption>
+        <?php if($captionThree) { ?>
+            <figcaption>
+                <p><?=$captionThree?></p>
+            </figcaption>
+        <?php } ?>
     </figure>
+
 </module-seven>
