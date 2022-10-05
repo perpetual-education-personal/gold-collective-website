@@ -1,72 +1,67 @@
-@media (min-width: 700px) {
-    module-three.base-template {
-        grid-template-columns: repeat(24, 1fr);
-        gap: 20px;
-    }
-}
-
-module-three {
+module-three.base-template {
 
     @media (min-width: 500px) {
 
-        .base-template {
-            grid-template-columns: repeat(24, 1fr);
-            gap: 20px;
-        }
-
         .module-text {
-            grid-row: 1 / 2;
-            grid-column: 1 / 6;
+
+            grid-column: span 6;
         }
 
         figure.one {
-            grid-row: 2 / 4;
-            grid-column: 1 / 7;
+
+            grid-row: 2;
+            grid-column: span 6;
         }
 
         figure.two {
-            grid-row: 3 / 5;
-            grid-column: 7 / 13;
+
+            grid-row: 2 / 4;
+            grid-column: span 6;
+
+            align-self: center;
         }
 
         figure.three {
-            grid-row: 4 / 5;
+
             grid-column: 1 / 6;
         }
 
         figure.four {
-            grid-row: 5 / 6;
+
             grid-column: 1 / 6;
         }
     }
 
 
+
     @media (min-width: 700px) {
 
-        .base-template {
-            grid-template-columns: repeat(24, 1fr);
-            gap: 20px;
-        }
+        grid-template-columns: repeat(24, 1fr);
 
         .module-text {
-            grid-column: span 10;
+
+            grid-column: span 8;
             padding-top: 20px;
         }
 
         figure.one {
             grid-row: 1;
+            grid-column: 11/ 19;
 
         }
 
         figure.two {
-            grid-row: 3 / 4;
-            grid-column: 15 / 23;
+            align-self: stretch;
+            grid-row: span 1;
+            grid-column: 15/ 23;
 
         }
 
+
         figure.three {
-            grid-row: 4 / 6;
-            grid-column: 3 / 12;
+            grid-row: 2;
+            grid-column: 3 / 11;
+            margin-top: 80px;
         }
 
     }
