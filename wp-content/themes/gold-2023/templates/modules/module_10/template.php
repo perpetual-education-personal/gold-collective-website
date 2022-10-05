@@ -1,41 +1,47 @@
 <module-ten class='base-template'>
-    <h2 class='attention-voice'>Highlights</h2>
+    <h2 class='attention-voice'><?= $heading ?></h2>
 
     <scroll-container>
         <figure class='one'>
             <picture>
-                <img src='https://peprojects.dev/images/portrait.jpg' alt='$todo' loading='lazy'>
+                <img src='<?= $imageOne ?>' alt='<?= $altTextOne ?>' loading='lazy'>
             </picture>
-            <figcaption>
-                <p>Example figure caption here.</p>
-            </figcaption>
+            <?php if ($captionOne) { ?>
+                <figcaption>
+                    <p><?= $captionOne ?></p>
+                </figcaption>
+
+            <?php } ?>
         </figure>
 
         <figure class='two'>
             <picture>
-                <img src='https://peprojects.dev/images/portrait.jpg' alt='$todo' loading='lazy'>
+                <img src='<?= $imageTwo ?>' alt='<?= $altTextTwo ?>' loading='lazy'>
             </picture>
-            <figcaption>
-                <p>Example figure caption here.</p>
-            </figcaption>
+            <?php if ($captionTwo) { ?>
+                <figcaption>
+                    <p><?= $captionTwo ?></p>
+                </figcaption>
+
+            <?php } ?>
         </figure>
 
         <figure class='three'>
             <picture>
-                <img src='https://peprojects.dev/images/portrait.jpg' alt='$todo' loading='lazy'>
+                <img src='<?= $imageThree ?>' alt='<?= $altTextThree ?>' loading='lazy'>
             </picture>
-            <figcaption>
-                <p>Example figure caption here.</p>
-            </figcaption>
+            <?php if ($captionThree) { ?>
+                <figcaption>
+                    <p><?= $captionThree ?></p>
+                </figcaption>
+
+            <?php } ?>
         </figure>
     </scroll-container>
     <div>
-        <p>We are destination lifestyle wedding
-            photographer's creating time capsules of
-            celebrations for couples that are authentic and
-            classic.</p>
+        <p><?= $intro ?></p>
 
-        <a href="#">Call to action</a>
+        <a href="<?= $link_url ?>"><?= $link_title ?></a>
     </div>
 
 </module-ten>
