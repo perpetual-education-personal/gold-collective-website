@@ -3,29 +3,38 @@
     <scroll-container>
         <figure class='one'>
             <picture>
-                <img src='https://peprojects.dev/images/portrait.jpg' alt='$todo' loading='lazy'>
+                <img src='<?= $imageOne ?>' alt='<?= $altTextOne ?>' loading='lazy'>
             </picture>
-            <figcaption>
-                <p>Example figure 1 caption here.</p>
-            </figcaption>
+            <?php if ($captionOne) { ?>
+                <figcaption>
+                    <p><?= $captionOne ?></p>
+                </figcaption>
+
+            <?php } ?>
         </figure>
 
         <figure class='two'>
             <picture>
-                <img src='https://peprojects.dev/images/portrait.jpg' alt='$todo' loading='lazy'>
+                <img src='<?= $imageTwo ?>' alt='<?= $altTextTwo ?>' loading='lazy'>
             </picture>
-            <figcaption>
-                <p>Example figure 2 caption here.</p>
-            </figcaption>
+            <?php if ($captionTwo) { ?>
+                <figcaption>
+                    <p><?= $captionTwo ?></p>
+                </figcaption>
+
+            <?php } ?>
         </figure>
 
         <figure class='three'>
             <picture>
-                <img src='https://peprojects.dev/images/portrait.jpg' alt='$todo' loading='lazy'>
+                <img src='<?= $imageThree ?>' alt='<?= $altTextThree ?>' loading='lazy'>
             </picture>
-            <figcaption>
-                <p>Example figure 3 caption here.</p>
-            </figcaption>
+            <?php if ($captionThree) { ?>
+                <figcaption>
+                    <p><?= $captionThree ?></p>
+                </figcaption>
+
+            <?php } ?>
         </figure>
     </scroll-container>
 
