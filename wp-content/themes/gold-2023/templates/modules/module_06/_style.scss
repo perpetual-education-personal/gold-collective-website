@@ -2,11 +2,6 @@
 
 module-six {
     
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0px;
-
-
     @media(min-width: 500px) {
             
         .module-text {

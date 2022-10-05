@@ -1,65 +1,65 @@
-module-seven {
+module-seven.base-template {
 
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3px;
-    max-width: 960px; /* $note: this should be determined by the parent element/context - and not the child component */
-    border: 1px solid rgb(0 0 0 / .1);
+    @media (max-width: 499px) {
 
-    h2 {
-        font-weight: 700;
-    }
-
-    p {
-        margin-top: 30px;
-    }
-
-}
-
-
-
-@media (min-width: 500px) {
-
-    module-seven {
-        display: grid;
         grid-template-columns: repeat(12, 1fr);
-        max-width: 960px;
 
-        text-content {
-            grid-column: span 4;
+        .module-text {
+            grid-column: span 7;
+            padding: 30px 0px 30px 0px;
         }
 
         figure.one {
-            grid-column: 1 / span 4;
+            grid-column: 1/5;
         }
 
         figure.two {
-            grid-column: 1 / span 4;
+            grid-column: 1/5;
+            margin-bottom: 30px;
+        }
+
+        figure.three {
+            grid-column: 6/13;
+            grid-row: 2/span 2;
+            align-self: start;
+        }
+    }
+
+    @media (min-width: 500px) {
+
+        column-gap: 35px;
+
+        .module-text {
+            grid-column: 2/span 6;
+        }
+
+        figure.one {
+            grid-column: 2 / span 4;
+        }
+
+        figure.two {
+            grid-column: 2 / span 4;
         }
 
         figure.three {
             grid-column: 6 / span 6;
             grid-row: 2 / span 2;
             align-self: start;
+            margin-top:30px;
         }
     }
-}
 
-
-@media(min-width: 1000px) {
-    module-seven {
+    @media(min-width: 1000px) {
 
         position: relative;
-        grid-template-columns: repeat(24, 1fr);
         padding-top: 50px;
+        column-gap:0px;
 
 
-        text-content {
+        .module-text {
             grid-column: 1 / span 8;
             position: absolute;
-            transform: translate(-50px, 100px);
+            transform: translate(-30px, 100px);
         }
 
         figure.one {
@@ -77,6 +77,5 @@ module-seven {
             grid-row: 1 / span 1;
             margin-bottom: 50px;
         }
-
-    }
-}
+     }
+ }
