@@ -776,7 +776,6 @@ module-ten figure.two {
   }
 }
 module-eleven {
-  display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 5vw;
 }
@@ -800,7 +799,6 @@ module-eleven figure.two {
 @media (min-width: 1000px) {
   module-eleven {
     grid-template-columns: repeat(24, 1fr);
-    /*module eleven*/
     gap: 10px;
   }
   module-eleven figure.one {

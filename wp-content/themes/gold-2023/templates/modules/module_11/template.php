@@ -1,23 +1,27 @@
 <module-eleven class="base-template">
 	<div class="module-text">
-		<h2>All in the details</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rerum delectus perferendis? Provident optio culpa porro ducimus non dignissimos perspiciatis corporis perferendis. Illo tempore animi ipsam ea ipsa eaque dolorum.</p>
+		<h2><?=$heading?></h2>
+		<p><?=$intro?></p>
 	</div>
 	<figure class='one'>
 		<picture>
-			<img src='https://peprojects.dev/images/portrait.jpg' alt='$todo loading=' lazy'>
+			<img src='<?=$imageOne?>' alt='<?=$altTextOne?>' loading='lazy'>
 		</picture>
-		<figcaption>
-			<p>Example figure caption here.</p>
-		</figcaption>
+		<?php if($captionOne) { ?>
+			<figcaption>
+				<p><?=$captionOne?></p>
+			</figcaption>
+		<?php } ?>
 	</figure>
 
 	<figure class='two'>
 		<picture>
-			<img src='https://peprojects.dev/images/portrait.jpg' alt='$todo' loading='lazy'>
+			<img src='<?=$imageTwo?>' alt='<?=$altTextTwo?>' loading='lazy'>
 		</picture>
-		<figcaption>
-			<p>Example figure caption here.</p>
-		</figcaption>
+		<?php if($captionTwo) { ?>
+			<figcaption>
+				<p><?=$captionTwo?></p>
+			</figcaption>
+		<?php } ?>
 	</figure>
 </module-eleven>

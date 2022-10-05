@@ -1,6 +1,5 @@
 module-eleven {
 
-  display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 5vw;
 
@@ -29,7 +28,6 @@ module-eleven {
   @media (min-width: 1000px) {
 
     grid-template-columns: repeat(24, 1fr);
-    /*module eleven*/
     gap: 10px;
 
     figure.one {
