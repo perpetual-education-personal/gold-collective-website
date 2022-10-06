@@ -24,5 +24,19 @@
         </inner-column>
     </header>
 
+    <?php if (is_page('home') || is_page('style-guide') ) { ?>
+  
+
+     <section class="homepage-background">
+         
+         <picture>
+             <img src="http://peprojects.dev/images/landscape.jpg" alt="">
+         </picture>
+     </section>   
+
+
+    <?php } ?>
+
+
     <main class="page-content">
         <!-- page content -->

@@ -870,3 +870,22 @@ figure.three picture {
     grid-template-columns: repeat(24, 1fr);
   }
 }
+.site-header {
+  border: 3px solid blue;
+  position: sticky;
+  top: 0;
+}
+
+.site-header ul {
+  display: flex;
+  flex-direction: row;
+  mix-blend-mode: difference;
+}
+
+body {
+  background-color: yellow;
+}
+
+body.home .site-header {
+  background-color: transparent;
+}
