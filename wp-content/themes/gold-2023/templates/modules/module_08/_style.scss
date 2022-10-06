@@ -66,13 +66,13 @@ module-eight {
         }
 
         figure.one {
-            grid-row: 2 / 4;
+            grid-row: 2 / span 2;
             grid-column: 1 / 8;
         }
 
         .copy {
             grid-row: 2 / 4;
-            grid-column: 8 / 12;
+            grid-column: 8 / 13;
         }
 
         .copy, figcaption {
@@ -87,7 +87,7 @@ module-eight {
 
         figcaption {
             grid-row: 3;
-            grid-column: 8 / 10;
+            grid-column: 8 / 13;
             color: gray;
             transform: translateY(0);
         }
@@ -108,7 +108,7 @@ module-eight {
         }
 
         figure.one {
-            grid-row: 2 / 4;
+            grid-row: 2 / span 2;
             grid-column: 2 / 16;
         }
 
@@ -122,7 +122,7 @@ module-eight {
         }
 
         figcaption {
-            grid-column: 16/20;
+            grid-column: 16/24;
         }
 
     }
