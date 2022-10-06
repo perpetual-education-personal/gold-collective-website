@@ -1,9 +1,5 @@
 module-four {
 
-	// section{
-	// 	margin: 20px 20px;	
-	// }
-
 	@media (min-width: 500px) {
 		figure.one {
 			grid-column: 1 / 13;
@@ -16,11 +12,10 @@ module-four {
 			grid-column: 1 / 25;
 
 
-
-
 			img {
 				object-fit: cover;
 				max-height: 90vh;
+
 			}
 
 
@@ -29,3 +24,7 @@ module-four {
 	}
 
 }
+
+// section.module_04 inner-column {
+// 	max-height: 50vh;
+// }

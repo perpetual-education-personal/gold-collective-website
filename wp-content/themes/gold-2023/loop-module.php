@@ -2,14 +2,14 @@
 
   <?php while (have_rows('page_modules')) : the_row(); /* note this alternate syntax */
     $module = get_row_layout();
-    ?>
+  ?>
 
 
     <?php include(getFile('loop-variables.php')); ?>
 
 
 
-    <section>
+    <section class='<?= $module ?>'>
       <inner-column>
 
         <?php include(getFile("templates/modules/$module/template.php")); ?>

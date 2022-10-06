@@ -1,15 +1,13 @@
-
-
 module-six {
-    
+
     @media(min-width: 500px) {
-            
+
         .module-text {
-            grid-column: 1 / 6;
+            grid-column: span 9;
             grid-row: 1 / 2;
             margin-top: 3vw;
         }
-        
+
         .one {
             grid-column: 6 / 13;
             grid-row: 2 / 5;
@@ -18,12 +16,12 @@ module-six {
     }
 
     @media(min-width: 1000px) {
-        
+
         .module-text {
             grid-column: span 9;
             grid-row: 1 / 2;
         }
-        
+
         .one {
             grid-column: 11 / 25;
             grid-row: 2 / 7;
@@ -31,6 +29,3 @@ module-six {
         }
     }
 }
-
-
-
