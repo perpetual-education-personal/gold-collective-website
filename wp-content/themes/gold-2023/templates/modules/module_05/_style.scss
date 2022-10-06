@@ -7,13 +7,10 @@ scroll-container {
 
     display: flex;
     gap: 20px;
-    align-items: center;
+    align-items: baseline;
 }
 
 module-five {
-    p {
-        max-width: 60ch;
-    }
 
 
     figure {
