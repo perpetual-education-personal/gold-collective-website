@@ -1,16 +1,25 @@
-.has-module_04{
-	padding-left: 0px;
-	padding-right: 0px;
-}
+@media (max-width: 500px) {
+	.has-module_04{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 
-.has-module_04 inner-column{
-	padding-left: 0px;
-	padding-right: 0px;
+	.has-module_04 inner-column{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	inner-column-2{
+		display: block;
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 0rem 1rem;
+		max-width: var(--column-width);
+	}
 }
 
 module-four {
-
-
 
 	@media (min-width: 500px) {
 		figure.one {
