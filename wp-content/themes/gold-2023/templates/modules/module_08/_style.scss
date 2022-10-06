@@ -27,9 +27,6 @@ module-eight {
         gap: 20px;
     }
 
-    .copy, figcaption {
-        margin-left: 18px;
-    }
 
     .optional {
         display: none;
@@ -77,6 +74,11 @@ module-eight {
             grid-row: 2 / 4;
             grid-column: 8 / 12;
         }
+
+        .copy, figcaption {
+        margin-left: 18px;
+        }
+
 
         figure.one picture {
             transform: translateX(0);

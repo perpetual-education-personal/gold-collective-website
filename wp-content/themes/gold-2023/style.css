@@ -591,9 +591,6 @@ module-eight .copy {
   flex-direction: column;
   gap: 20px;
 }
-module-eight .copy, module-eight figcaption {
-  margin-left: 18px;
-}
 module-eight .optional {
   display: none;
 }
@@ -627,6 +624,9 @@ module-eight .optional {
   module-eight .copy {
     grid-row: 2/4;
     grid-column: 8/12;
+  }
+  module-eight .copy, module-eight figcaption {
+    margin-left: 18px;
   }
   module-eight figure.one picture {
     transform: translateX(0);
