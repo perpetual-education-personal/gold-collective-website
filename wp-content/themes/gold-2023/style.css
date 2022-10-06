@@ -200,6 +200,7 @@ h2 + text-content {
 figcaption p {
   color: var(--mineshaft);
   margin-top: 10px;
+  font-size: 12px;
 }
 
 @media (max-width: 499px) {
@@ -507,7 +508,7 @@ module-five div {
     grid-template-columns: repeat(12, 1fr);
   }
   module-seven.base-template .module-text {
-    grid-column: span 7;
+    grid-column: span 11;
     padding: 30px 0px 30px 0px;
   }
   module-seven.base-template figure.one {
@@ -582,7 +583,6 @@ module-eight figcaption {
   grid-column: 1/2;
   font-size: 12px;
   color: gray;
-  transform: translateY(-50%);
 }
 module-eight .copy {
   grid-row: 5;
