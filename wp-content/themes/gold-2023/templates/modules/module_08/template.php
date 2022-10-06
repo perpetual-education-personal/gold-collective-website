@@ -17,7 +17,7 @@
 
 
     <div class="copy">
-        <?=$intro?>
+        <text-content><?=$intro?></text-content>
         <cta>
             <a href="<?=$link_url?>"><?=$link_title?></a>
         </cta>

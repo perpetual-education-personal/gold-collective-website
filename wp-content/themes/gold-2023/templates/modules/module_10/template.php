@@ -39,7 +39,7 @@
         </figure>
     </scroll-container>
     <div>
-        <p><?= $intro ?></p>
+        <text-content><?=$intro?></text-content>
 
         <a href="<?= $link_url ?>"><?= $link_title ?></a>
     </div>

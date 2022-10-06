@@ -2,7 +2,7 @@
     <div class='module-text'>
         <h2 class='attention-voice'><?= $heading ?></h2>
 
-        <p class="intro"><?= $intro ?></p>
+        <text-content><?= $intro ?></text-content>
     </div>
 
     <figure class='one'>

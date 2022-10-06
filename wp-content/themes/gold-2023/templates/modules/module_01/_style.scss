@@ -42,7 +42,7 @@ module-one {
 			grid-column: 1 / 5;
 		}
 
-		.intro {
+		text-content {
 			grid-column: 5 / 8;
 		}
 
@@ -60,7 +60,7 @@ module-one {
 			grid-column: 1 / 6;
 		}
 
-		.intro {
+		text-content {
 			grid-column: 6 / 9;
 		}
 
@@ -85,7 +85,7 @@ module-one {
 			transition: 1s;
 		}
 
-		.intro {
+		text-content {
 			transform: translateX(-100px);
 			transition: 1s;
 		}
