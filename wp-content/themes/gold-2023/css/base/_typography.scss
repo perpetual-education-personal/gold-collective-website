@@ -1,13 +1,5 @@
-
-
 body {
 	font-family: 'Futura', sans-serif;
-}
-
-.menu ul {
-	li + li {
-	margin-top: 20px;
-	}
 }
 
 h2 {
@@ -15,7 +7,7 @@ h2 {
 	line-height: 1.5;
 }
 
-h2 + text-content {
+h2+text-content {
 	margin-top: 10px;
 }
 

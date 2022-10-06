@@ -17,7 +17,7 @@ module-ten {
     }
 
     figure picture {
-        max-height: 50vh;
+        max-height: 60vh;
     }
 
     div {
@@ -30,13 +30,24 @@ module-ten {
 
 @media (min-width: 500px) {
     module-ten {
+        scroll-container {
+            grid-column: span 12;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            overflow-x: visible;
+            max-height: none;
+        }
 
-        scroll-container,
+        figure {
+            grid-column: span 4;
+        }
+
         div {
             grid-column: span 12;
         }
     }
 }
+
 
 
 @media (min-width: 1000px) {
