@@ -9,7 +9,7 @@
 
 
 
-    <section class='has-<?= $module ?>'>
+    <section class='has-<?= $module ?>' id='<?= $module ?>'>
       <inner-column>
 
         <?php include(getFile("templates/modules/$module/template.php")); ?>
