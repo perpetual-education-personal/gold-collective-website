@@ -26,6 +26,8 @@
 
             </logo>
 
+            <button id='toggle' rel='hamburger'></button>
+
             <?php include('templates/modules/site-menu/template.php') ?>
         </inner-column>
     </header>

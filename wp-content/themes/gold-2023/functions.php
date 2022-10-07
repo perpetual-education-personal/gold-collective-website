@@ -1,6 +1,7 @@
 <?php
 
-function getFile($path) {
+function getFile($path)
+{
     return dirname(__FILE__) . '/' . $path;
 }
 
@@ -10,14 +11,16 @@ add_filter('show_admin_bar', '__return_false');
 
 
 // load css into the website's front-end (via wp_head)
-function gc_enqueue_styles() {
+function gc_enqueue_styles()
+{
     wp_enqueue_style('my-style', get_stylesheet_uri());
 }
 add_action('wp_enqueue_scripts', 'gc_enqueue_styles');
 
 
 // (function name says what it is ;)
-function register_my_menu() {
+function register_my_menu()
+{
     register_nav_menu('site-menu', __('Site menu'));
 }
 add_action('init', 'register_my_menu');
@@ -27,12 +30,20 @@ add_action('init', 'register_my_menu');
 // ?
 
 
+/* Custom script with no dependencies, enqueued in the header */
+add_action('wp_enqueue_scripts', 'tutsplus_enqueue_custom_js');
+function tutsplus_enqueue_custom_js()
+{
+    wp_enqueue_script('custom', get_stylesheet_directory_uri() . '/scripts/custom.js');
+}
+
 // $todo -- remove jquery. copy / paste most code from -- https://support.advancedcustomfields.com/forums/topic/collapse-flexible-content-fields/#post-144624
-function acf_toggle_flexible_content_fields() { ?>
+function acf_toggle_flexible_content_fields()
+{ ?>
     <script type="text/javascript">
         (function($) {
             acf.add_action('load', function($el) {
-  
+
                 let $field = $el.find('.acf-field-flexible-content'); // Get flexabile fields
                 $field = Array.prototype.slice.call($field); // Convert to array
 
@@ -44,8 +55,8 @@ function acf_toggle_flexible_content_fields() { ?>
                 btnClose.style.top = '10px';
                 btnClose.style.right = '70px';
                 btnClose.style.cursor = 'pointer';
-                btnClose.style.zIndex= '10';
-                btnClose.style.padding= '5px';
+                btnClose.style.zIndex = '10';
+                btnClose.style.padding = '5px';
                 btnClose.style.userSelect = 'none';
                 btnClose.style.fontFamily = 'monospace';
                 btnClose.style.border = '1px solid #2271b1';
@@ -56,13 +67,13 @@ function acf_toggle_flexible_content_fields() { ?>
                 btnOpen.style.top = '10px';
                 btnOpen.style.right = '20px';
                 btnOpen.style.cursor = 'pointer';
-                btnOpen.style.zIndex= '10';
-                btnOpen.style.padding= '5px';
+                btnOpen.style.zIndex = '10';
+                btnOpen.style.padding = '5px';
                 btnOpen.style.userSelect = 'none';
                 btnOpen.style.fontFamily = 'monospace';
                 btnOpen.style.border = '1px solid #2271b1';
                 btnOpen.innerText = 'Open';
-  
+
                 $field.forEach(function(container) { // Loop through all fields on the page
 
                     // Prepend button on top of the container
@@ -93,6 +104,6 @@ function acf_toggle_flexible_content_fields() { ?>
             });
         })(jQuery);
     </script>
-  <?php
+<?php
 }
-  add_action('acf/input/admin_footer', 'acf_toggle_flexible_content_fields');
+add_action('acf/input/admin_footer', 'acf_toggle_flexible_content_fields');
