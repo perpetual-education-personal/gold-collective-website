@@ -10,9 +10,9 @@
     <meta name='description' content="This is the Gold Collective website.">
     <meta property="og:image" content=" <?php echo get_template_directory_uri() . '/images/meta/meta.png' ?>">
 
-    <?php 
-        wp_head(); 
-        // WP function to include any styles, scripts, or things before* page load
+    <?php
+    wp_head();
+    // WP function to include any styles, scripts, or things before* page load
     ?>
 </head>
 
@@ -20,19 +20,25 @@
 
     <header class='site-header'>
         <inner-column>
+            <logo class="gold-collective">
+
+                <?php include('wp-content/themes/gold-2023/images/logo.php'); ?>
+
+            </logo>
+
             <?php include('templates/modules/site-menu/template.php') ?>
         </inner-column>
     </header>
 
-    <?php if (is_page('home') || is_page('style-guide') ) { ?>
-  
+    <?php if (is_page('home') || is_page('style-guide')) { ?>
 
-     <section class="homepage-background">
-         
-         <picture>
-             <img src="http://peprojects.dev/images/landscape.jpg" alt="">
-         </picture>
-     </section>   
+
+        <section class="homepage-background">
+
+            <picture>
+                <img src="http://peprojects.dev/images/landscape.jpg" alt="">
+            </picture>
+        </section>
 
 
     <?php } ?>

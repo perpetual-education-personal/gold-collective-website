@@ -1,38 +1,24 @@
-picture,
-logo,
-svg,
-figure {
-    display: block;
-}
-
-
-.navbar {
-    border: 3px solid orange;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.hamburger-menu {
-    border: 3px solid green;
-    padding: 30px;
-}
-
-
-.gold-collective {
-    width: 140px;
-    padding: 20px;
-}
-
-.hamburger-menu {
-    flex: 1;
-}
-
 module-nine {
-
 
     display: grid;
     grid-template-columns: 1fr;
+
+    .navbar {
+        border: 3px solid orange;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hamburger-menu {
+        border: 3px solid green;
+        padding: 30px;
+    }
+
+    .hamburger-menu {
+        flex: 1;
+    }
+
 
     figcaption p {
         font-size: 0.9rem;
