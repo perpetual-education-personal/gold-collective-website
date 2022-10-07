@@ -25,12 +25,7 @@ header {
         align-items: center;
         padding: 10px;
         justify-content: space-between;
-    }
-
-    ul {
-        display: flex;
-        flex-direction: row;
-        mix-blend-mode: difference;
+        position: relative;
     }
 
     .gold-collective {
@@ -38,4 +33,43 @@ header {
         padding: 20px;
         flex-shrink: 0;
     }
+
+    .hamburger-button {
+        padding: 20px;
+        width: 10%;
+        outline: none;
+        border: 2px solid rgb(154, 152, 152);
+        background-color: rgb(222, 221, 221);
+    }
+
+    .hamburger-button:hover {
+        background-color: rgb(245 195 203);
+        border-color: rgb(160, 159, 159);
+
+    }
+}
+
+div.menu {
+    display: none;
+    position: absolute;
+    bottom: -320px;
+    right: 0;
+    text-align: center;
+    padding: 5px;
+    background-color: var(--page);
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        li {
+            border: 2px solid var(--ink);
+            padding: 5px 10px;
+        }
+    }
+}
+
+div.display-menu {
+    display: block;
 }

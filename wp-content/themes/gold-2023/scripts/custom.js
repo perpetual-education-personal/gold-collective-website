@@ -6,8 +6,8 @@ window.addEventListener('click', function (event) {
     if (event.target.matches('[rel="hamburger"]')) {
         event.preventDefault();
 
-        var body = document.querySelector("body");
-        body.classList.toggle("new");
+        var menu = document.querySelector(".menu");
+        menu.classList.toggle("display-menu");
     }
 }
 )
