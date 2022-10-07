@@ -1,30 +1,42 @@
 module-five {
+
     scroll-container {
-        scroll-snap-type: x mandatory;
-        overflow-x: scroll;
-        overflow-y: hidden;
-
-        max-height: fit-content;
-
-        display: flex;
-        gap: 20px;
-        align-items: baseline;
+        height: 50vh;
+        display: block;
+        width: 100%;
     }
 
+    ul {
+        display: flex;
+        gap: 20px;
+        height: 100%;
+        overflow: scroll;
+        overflow-y: hidden;
+    }
+
+    li,
+    figure,
+    picture {
+        height: 100%;
+    }
+
+    img {
+        display: block;
+        width: auto;
+        height: 100%;
+    }
 
     figure {
-        min-width: 90%;
-        scroll-snap-align: start;
-    }
+        outline: 2px solid blue;
 
-    figure picture {
-        max-height: 60vh;
-    }
+        picture {
+            outline: 2px solid purple;
+        }
 
-    div {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+        // img {
+        //     // width: auto;
+        //     // height: 100%;
+        // }
     }
 
 }
@@ -38,6 +50,10 @@ module-five {
             grid-template-columns: repeat(12, 1fr);
             overflow-x: visible;
             max-height: none;
+        }
+
+        ul {
+            grid-column: span 12;
         }
 
         figure {
@@ -56,24 +72,30 @@ module-five {
             grid-template-columns: repeat(24, 1fr);
             align-items: center;
             grid-template-rows: 100px 1fr 100px;
-            overflow-x: visible;
+
         }
+
+        ul {
+            overflow-x: visible;
+            align-items: center;
+        }
+
 
         figure {
             min-height: none;
         }
 
-        figure.one {
+        li:nth-of-type(1) {
             grid-column: 3/ span 6;
             grid-row: 2/ span 2;
         }
 
-        figure.two {
+        li:nth-of-type(2) {
             grid-row: 1 / span 2;
             grid-column: 10/ span 7;
         }
 
-        figure.three {
+        li:nth-of-type(3) {
             grid-column: 18/ span 6;
             grid-row: 2/ span 2;
         }
