@@ -49,7 +49,7 @@ header {
     }
 }
 
-div.my_extra_menu_class {
+.my_extra_menu_class {
     display: none;
     position: absolute;
     bottom: -320px;
@@ -74,7 +74,7 @@ div.my_extra_menu_class {
     }
 }
 
-div.display-menu {
+header.display-menu .my_extra_menu_class {
     display: block;
 }
 
@@ -83,7 +83,7 @@ div.display-menu {
         display: none;
     }
 
-    div.menu {
+    .my_extra_menu_class {
         display: block;
         position: static;
         text-align: center;
