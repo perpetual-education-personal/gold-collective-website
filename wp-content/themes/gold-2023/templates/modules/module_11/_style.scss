@@ -1,26 +1,26 @@
 module-eleven {
 
-  grid-template-columns: repeat(12, 1fr);
-  gap: 5vw;
 
-  .module-text {
-    display: none;
-  }
+  @media (min-width: 500px) {
+    .module-text {
+      display: none;
+    }
 
-  figure.one {
-    grid-column: 1/span 5;
-    grid-row: 1/5;
-    /* 	margin-top:40px; */
-  }
-
-  figure.two {
-    grid-row: 3/span 4;
-    grid-column: 6/13;
-  }
-
-  @media (max-width: 499px) {
     figure.one {
-      max-width: 80%;
+      grid-column: 1/span 5;
+      grid-row: 1/5;
+      /* 	margin-top:40px; */
+    }
+
+    figure.two {
+      grid-row: 3/span 4;
+      grid-column: 6/13;
+    }
+
+    @media (max-width: 499px) {
+      figure.one {
+        max-width: 80%;
+      }
     }
   }
 
