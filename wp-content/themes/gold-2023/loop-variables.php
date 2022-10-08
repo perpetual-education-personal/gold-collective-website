@@ -22,3 +22,5 @@ $captionTwo = get_sub_field('caption_2');
 $imageThree = get_sub_field('image_3')['url'] ?? null;
 $altTextThree = get_sub_field('alttext_3');
 $captionThree = get_sub_field('caption_3');
+
+$textBlock = get_sub_field('generic_wysiwyg');
