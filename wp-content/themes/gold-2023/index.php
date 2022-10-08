@@ -29,7 +29,7 @@
     }
 
     if (is_page('faq')) {
-        include('templates/pages/faq.php');
+        include('templates/pages/faqs.php');
     }
 
     if (is_page('contact')) {
