@@ -20,6 +20,22 @@
         include('templates/pages/weddings.php');
     }
 
+    if (is_page('about')) {
+        include('templates/pages/about.php');
+    }
+
+    if (is_page('testimonials')) {
+        include('templates/pages/testimonials.php');
+    }
+
+    if (is_page('faq')) {
+        include('templates/pages/faq.php');
+    }
+
+    if (is_page('contact')) {
+        include('templates/pages/contact.php');
+    }
+
 
     // DETAIL PAGES
     if (is_singular('highlight')) {
