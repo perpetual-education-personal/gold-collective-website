@@ -28,7 +28,7 @@
         include('templates/pages/testimonials.php');
     }
 
-    if (is_page('faq')) {
+    if (is_page('faqs')) {
         include('templates/pages/faqs.php');
     }
 
