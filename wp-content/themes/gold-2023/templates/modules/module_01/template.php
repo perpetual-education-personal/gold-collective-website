@@ -12,7 +12,7 @@
 		</picture>
 
 		<figcaption>
-			<p><?= $captionOne ?></p>
+			<p><?= $descriptionOne ?></p>
 		</figcaption>
 	</figure>
 
@@ -22,7 +22,7 @@
 		</picture>
 
 		<figcaption>
-			<p><?= $captionTwo ?></p>
+			<p><?= $descriptionTwo ?></p>
 		</figcaption>
 	</figure>
 
@@ -32,7 +32,7 @@
 		</picture>
 
 		<figcaption>
-			<p><?= $captionThree ?></p>
+			<p><?= $descriptionThree ?></p>
 		</figcaption>
 	</figure>
 </module-one>
