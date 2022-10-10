@@ -7,9 +7,9 @@
                     <picture>
                         <img src='<?= $imageOne ?>' alt='<?= $altTextOne ?>' loading='lazy'>
                     </picture>
-                    <?php if ($captionOne) { ?>
+                    <?php if ($descriptionOne) { ?>
                         <figcaption>
-                            <p><?= $captionOne ?></p>
+                            <p><?= $descriptionOne ?></p>
                         </figcaption>
                     <?php } ?>
                 </figure>
@@ -20,9 +20,9 @@
                     <picture>
                         <img src='<?= $imageTwo ?>' alt='<?= $altTextTwo ?>' loading='lazy'>
                     </picture>
-                    <?php if ($captionTwo) { ?>
+                    <?php if ($descriptionTwo) { ?>
                         <figcaption>
-                            <p><?= $captionTwo ?></p>
+                            <p><?= $descriptionTwo ?></p>
                         </figcaption>
                     <?php } ?>
                 </figure>
@@ -33,15 +33,14 @@
                     <picture>
                         <img src='<?= $imageThree ?>' alt='<?= $altTextThree ?>' loading='lazy'>
                     </picture>
-                    <?php if ($captionThree) { ?>
+                    <?php if ($descriptionThree) { ?>
                         <figcaption>
-                            <p><?= $captionThree ?></p>
+                            <p><?= $descriptionThree ?></p>
                         </figcaption>
                     <?php } ?>
                 </figure>
             </li>
         </ul>
     </scroll-container>
-
 
 </module-five>

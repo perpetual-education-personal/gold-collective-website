@@ -7,7 +7,7 @@
 		<picture>
 			<img src='<?=$imageOne?>' alt='<?=$altTextOne?>' loading='lazy'>
 		</picture>
-		<?php if($captionOne) { ?>
+		<?php if($descriptionOne) { ?>
 			<figcaption>
 				<p><?=$captionOne?></p>
 			</figcaption>
@@ -18,9 +18,9 @@
 		<picture>
 			<img src='<?=$imageTwo?>' alt='<?=$altTextTwo?>' loading='lazy'>
 		</picture>
-		<?php if($captionTwo) { ?>
+		<?php if($descriptionTwo) { ?>
 			<figcaption>
-				<p><?=$captionTwo?></p>
+				<p><?=$descriptionTwo?></p>
 			</figcaption>
 		<?php } ?>
 	</figure>

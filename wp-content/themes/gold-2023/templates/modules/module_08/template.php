@@ -12,7 +12,7 @@
     </figure>
 
     <figcaption>
-        <p><?=$captionOne?></p>
+        <p><?=$descriptionOne?></p>
     </figcaption>
 
 

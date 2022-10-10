@@ -10,9 +10,9 @@
             <img src='<?= $imageOne ?>' alt='<?= $altTextOne ?>' loading='lazy'>
         </picture>
             
-        <?php if ($captionOne) { ?>
+        <?php if ($descriptionOne) { ?>
             <figcaption>
-                <p><?= $captionOne ?></p>
+                <p><?= $descriptionOne ?></p>
             </figcaption>
         <?php } ?>
 
