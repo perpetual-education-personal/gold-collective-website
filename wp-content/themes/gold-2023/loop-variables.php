@@ -27,20 +27,20 @@ $textBlock = get_sub_field('generic_wysiwyg');
 
 $groupOne = get_sub_field('image_one');
 $groupTwo = get_sub_field('image_two');
-$groupThree = get_sub_field('image_three');
+$groupThree = get_sub_field('image_three') ;
 
 // $titleOne = $groupOne['title'];
-$imageOne = $groupOne['image']['url'] ?? null;
+$imageOne = $groupOne['image']['url'];
 $altTextOne = $groupOne['alt_text'];
 $descriptionOne = $groupOne['description'];
 
 // $titleTwo = $groupTwo['title'];
-$imageTwo = $groupTwo['image']['url'] ?? null;
+$imageTwo = $groupTwo['image']['url'];
 $altTextTwo = $groupTwo['alt_text'];
 $descriptionTwo = $groupTwo['description'];
 
 // $titleThree = $groupThree['title'];
-$imageThree = $groupThree['image']['url'] ?? null;
+$imageThree = $groupThree['image']['url'];
 $altTextThree = $groupThree['alt_text'];
 $descriptionThree = $groupThree['description'];
 
