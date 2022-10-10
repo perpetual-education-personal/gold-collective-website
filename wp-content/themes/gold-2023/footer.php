@@ -1,19 +1,20 @@
+<!-- page content -->
+</main>
 
-        <!-- page content -->
-    </main>
-
-    <footer>
-        <inner-column>
-            <h3>This is a footer</h3>
-        </inner-column>
+<footer class='site-header'>
+    <inner-column>
 
 
-    </footer>
+        <?php include('templates/modules/site-footer/template.php') ?>
+    </inner-column>
+</footer>
 
-    <?php 
-        wp_footer();
-        // WP function to include any scripts or things after* page load
-    ?>
+
+<?php
+wp_footer();
+// WP function to include any scripts or things after* page load
+?>
 
 </body>
+
 </html>

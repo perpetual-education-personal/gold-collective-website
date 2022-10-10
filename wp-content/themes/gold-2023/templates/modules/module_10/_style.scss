@@ -16,9 +16,6 @@ module-ten {
         scroll-snap-align: start;
     }
 
-    figure picture {
-        max-height: 60vh;
-    }
 
     div {
         display: flex;
@@ -70,7 +67,18 @@ module-ten {
         }
 
         figure.three {
+
             grid-column: span 14;
+
+            picture {
+                aspect-ratio: 16/9;
+
+
+            }
+
+            img {
+                object-fit: cover;
+            }
         }
 
         div {
