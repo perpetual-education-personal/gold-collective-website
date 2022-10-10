@@ -9,7 +9,7 @@
 		</picture>
 		<?php if($descriptionOne) { ?>
 			<figcaption>
-				<p><?=$captionOne?></p>
+				<p><?=$descriptionOne?></p>
 			</figcaption>
 		<?php } ?>
 	</figure>

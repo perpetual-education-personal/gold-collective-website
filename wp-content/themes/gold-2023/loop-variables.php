@@ -30,16 +30,16 @@ $groupTwo = get_sub_field('image_two');
 $groupThree = get_sub_field('image_three');
 
 // $titleOne = $groupOne['title'];
-$imageOne = $groupOne['image']['url'];
-$altTextOne = $groupOne['alt_text'];
-$descriptionOne = $groupOne['description'];
+$imageOne = $groupOne['image']['url'] ?? null;
+$altTextOne = $groupOne['alt_text'] ?? null;
+$descriptionOne = $groupOne['description'] ?? null;
 
 // $titleTwo = $groupTwo['title'];
-$imageTwo = $groupTwo['image']['url'];
-$altTextTwo = $groupTwo['alt_text'];
-$descriptionTwo = $groupTwo['description'];
+$imageTwo = $groupTwo['image']['url'] ?? null;
+$altTextTwo = $groupTwo['alt_text'] ?? null;
+$descriptionTwo = $groupTwo['description'] ?? null;
 
 // $titleThree = $groupThree['title'];
-$imageThree = $groupThree['image']['url'];
-$altTextThree = $groupThree['alt_text'];
-$descriptionThree = $groupThree['description'];
+$imageThree = $groupThree['image']['url'] ?? null;
+$altTextThree = $groupThree['alt_text'] ?? null;
+$descriptionThree = $groupThree['description'] ?? null;
