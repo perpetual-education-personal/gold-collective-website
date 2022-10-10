@@ -1,4 +1,4 @@
-4<?php
+<?php
 // Reminder: "get_" returns, "the_" echoes
 
 $heading = get_sub_field('heading');
@@ -26,8 +26,8 @@ if($link) {
 $textBlock = get_sub_field('generic_wysiwyg');
 
 $groupOne = get_sub_field('image_one');
-$groupTwo = get_sub_field('image_two') ?? null;
-$groupThree = get_sub_field('image_three') ?? null;
+$groupTwo = get_sub_field('image_two');
+$groupThree = get_sub_field('image_three');
 
 // $titleOne = $groupOne['title'];
 $imageOne = $groupOne['image']['url'];
