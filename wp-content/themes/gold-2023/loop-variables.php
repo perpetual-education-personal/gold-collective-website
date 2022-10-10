@@ -26,8 +26,8 @@ if($link) {
 $textBlock = get_sub_field('generic_wysiwyg');
 
 $groupOne = get_sub_field('image_one');
-$groupTwo = get_sub_field('image_two');
-$groupThree = get_sub_field('image_three') ;
+$groupTwo = get_sub_field('image_two') ?? null;
+$groupThree = get_sub_field('image_three') ?? null;
 
 // $titleOne = $groupOne['title'];
 $imageOne = $groupOne['image']['url'];
@@ -43,4 +43,3 @@ $descriptionTwo = $groupTwo['description'];
 $imageThree = $groupThree['image']['url'];
 $altTextThree = $groupThree['alt_text'];
 $descriptionThree = $groupThree['description'];
-
