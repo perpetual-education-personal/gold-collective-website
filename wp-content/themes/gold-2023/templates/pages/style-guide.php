@@ -1,7 +1,10 @@
+<h1 class="page-header">Style Guide</h2>
+
+
 <font-overview>
 
 	<div class="jean-luc">
-	  <h1 class="body-copy">JeanLuc</h1>
+	  <h1 class="font-name">JeanLuc</h1>
 	  <div class="big-example">
 	      <div class="letters">
 	        abcdefghijklm<br>nopqrstuvwxyz      </div>
@@ -21,7 +24,7 @@
 	</div>
 
 	<div class="futura">
-	  <h1 class="body-copy">Futura</h1>
+	  <h1 class="font-name">Futura</h1>
 	  <div class="big-example">
 	      <div class="letters">
 	        abcdefghijklm<br>nopqrstuvwxyz      </div>

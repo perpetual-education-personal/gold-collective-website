@@ -28,9 +28,40 @@ Tags:
 
 
 .jean-luc {
-	font-family: 'Jean-Luc';
+	font-family: 'JeanLucWEB';
 }
 
 
-// :is .jean-luc, .futura (.body-copy) {
+:is(.jean-luc, .futura) .body-copy {
+	font-size: 32px;
+}
+
+.page-header {
+	text-decoration: underline;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+.big-example {
+	font-size: 48px;
+}
+
+.small-example {
+	font-size: 24px;
+}
+
+.font-name {
+	font-family: 'Courier';
+	font-size: 24px;
+	color: var(--mineshaft);
+	background: #dedddd;
+	padding: 10px 15px;
+	display: inline-block;
+}
+
+.font-name, .big-example, .small-example {
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
 
