@@ -24,3 +24,13 @@ Tags:
 @import "base/typography";
 @import "base/type-patterns";
 @import "modules";
+
+
+
+.jean-luc {
+	font-family: 'Jean-Luc';
+}
+
+
+// :is .jean-luc, .futura (.body-copy) {
+
