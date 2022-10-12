@@ -1,34 +1,65 @@
-<thing-module>
-	<div class='intro'>
-		<h2 class='attention-voice'>Heading for this section</h2>
+<?php
+$heading = get_sub_field('heading');
+$intro = get_sub_field('intro');
 
-		<p>Little leading paragraph would be here.</p>
+$groupOne = get_sub_field('image_one');
+$groupTwo = get_sub_field('image_two');
+$groupThree = get_sub_field('image_three');
+
+// $titleOne = $groupOne['title'];
+$imageOne = $groupOne['image']['url'] ?? null;
+$altTextOne = $groupOne['alt_text'] ?? null;
+$descriptionOne = $groupOne['description'] ?? null;
+
+// $titleTwo = $groupTwo['title'];
+$imageTwo = $groupTwo['image']['url'] ?? null;
+$altTextTwo = $groupTwo['alt_text'] ?? null;
+$descriptionTwo = $groupTwo['description'] ?? null;
+
+// $titleThree = $groupThree['title'];
+$imageThree = $groupThree['image']['url'] ?? null;
+$altTextThree = $groupThree['alt_text'] ?? null;
+$descriptionThree = $groupThree['description'] ?? null;
+?>
+
+<thing-module class="base-template">
+	<div class="intro">
+		<h2 class="attention-voice"><?= $heading ?></h2>
+
+		<text-content><?= $intro ?></text-content>
 	</div>
 
-	<figure class='one'>
+	<figure class="one">
 		<picture>
-			<img src='https://peprojects.dev/images/portrait.jpg' alt='$todo' loading='lazy'>
+			<img src="<?= $imageOne ?>" alt="<?= $altTextOne ?>" loading='lazy'>
 		</picture>
-		<figcaption>
-			<p>Example figure caption here.</p>
-		</figcaption>
+		<?php if ($descriptionOne) { ?>
+			<figcaption>
+				<?= $descriptionOne ?>
+			</figcaption>
+		<?php } ?>
 	</figure>
 
-	<figure class='two'>
+	<figure class="two">
 		<picture>
-			<img src='https://peprojects.dev/images/portrait.jpg' alt='$todo' loading='lazy'>
+			<img src="<?= $imageTwo ?>" alt="<?= $altTextTwo ?>" loading='lazy'>
 		</picture>
-		<figcaption>
-			<p>Example figure caption here.</p>
-		</figcaption>
+		<?php if ($descriptionTwo) { ?>
+			<figcaption>
+				<?= $descriptionTwo ?>
+			</figcaption>
+		<?php } ?>
 	</figure>
 
-	<figure class='three'>
+	<figure class="three">
 		<picture>
-			<img src='https://peprojects.dev/images/portrait.jpg' alt='$todo' loading='lazy'>
+			<img src="<?= $imageThree ?>" alt="<?= $altTextThree ?>" loading='lazy'>
 		</picture>
-		<figcaption>
-			<p>Example figure caption here.</p>
-		</figcaption>
+		<?php if ($descriptionThree) { ?>
+			<figcaption>
+				<?= $descriptionThree ?>
+			</figcaption>
+		<?php } ?>
 	</figure>
+
 </thing-module>

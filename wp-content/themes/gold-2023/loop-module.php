@@ -4,11 +4,6 @@
     $module = get_row_layout();
   ?>
 
-
-    <?php include(getFile('loop-variables.php')); ?>
-
-
-
     <section class='has-<?= $module ?>'>
       <inner-column>
 
