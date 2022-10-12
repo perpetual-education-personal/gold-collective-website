@@ -43,3 +43,10 @@ $descriptionTwo = $groupTwo['description'] ?? null;
 $imageThree = $groupThree['image']['url'] ?? null;
 $altTextThree = $groupThree['alt_text'] ?? null;
 $descriptionThree = $groupThree['description'] ?? null;
+
+
+
+//Testimonial Variables//
+$review = get_sub_field('review');
+$source = get_sub_field('source');
+
