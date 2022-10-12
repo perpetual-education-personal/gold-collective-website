@@ -50,3 +50,7 @@ $descriptionThree = $groupThree['description'] ?? null;
 $review = get_sub_field('review');
 $source = get_sub_field('source');
 
+//FAQ Variables//
+$question = get_sub_field('question');
+$answer = get_sub_field('answer');
+
