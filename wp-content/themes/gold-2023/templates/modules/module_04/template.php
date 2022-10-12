@@ -11,7 +11,7 @@
 
         <inner-column-2>
             <figcaption>
-                <p><?= $descriptionOne ?></p>
+                <?= $descriptionOne ?>
             </figcaption>
         </inner-column-2>
 

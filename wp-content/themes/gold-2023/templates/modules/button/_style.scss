@@ -2,8 +2,17 @@
 	padding: 0px 0px;
 }
 
+.has-button inner-column {
+	display: flex;
+	gap: 30px;
+}
+
+.generic-button {
+	gap: 20px;
+}
+
 .generic-button a {
-	display: inline;
+	display: block;
 	background-color: black;
 	color: white;
 	border: 1px solid black;

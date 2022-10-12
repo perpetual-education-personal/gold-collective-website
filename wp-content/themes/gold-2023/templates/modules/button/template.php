@@ -1,9 +1,7 @@
-<div class="generic-button">
+
 	
 
 <?php
-
-
 
 if( have_rows('actions') ):
 
@@ -16,9 +14,9 @@ if( have_rows('actions') ):
         // Do something...
 
 
-
+        echo "<div class='generic-button'>";
         echo "<a href='$link[url]?>'>$callToAction</a>";
-
+        echo "</div>";
 
     // End loop.
     endwhile;
@@ -29,5 +27,5 @@ else :
 endif;
 
 
-echo "</div>";
+
 

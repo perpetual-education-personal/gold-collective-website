@@ -9,7 +9,7 @@
                     </picture>
                     <?php if ($descriptionOne) { ?>
                         <figcaption>
-                            <p><?= $descriptionOne ?></p>
+                            <?= $descriptionOne ?>
                         </figcaption>
                     <?php } ?>
                 </figure>
@@ -22,7 +22,7 @@
                     </picture>
                     <?php if ($descriptionTwo) { ?>
                         <figcaption>
-                            <p><?= $descriptionTwo ?></p>
+                            <?= $descriptionTwo ?>
                         </figcaption>
                     <?php } ?>
                 </figure>
@@ -35,7 +35,7 @@
                     </picture>
                     <?php if ($descriptionThree) { ?>
                         <figcaption>
-                            <p><?= $descriptionThree ?></p>
+                            <?= $descriptionThree ?>
                         </figcaption>
                     <?php } ?>
                 </figure>

@@ -12,7 +12,7 @@
             
         <?php if ($descriptionOne) { ?>
             <figcaption>
-                <p><?= $descriptionOne ?></p>
+                <?= $descriptionOne ?>
             </figcaption>
         <?php } ?>
 
