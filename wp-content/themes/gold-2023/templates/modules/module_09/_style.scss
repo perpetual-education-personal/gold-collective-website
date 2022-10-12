@@ -4,14 +4,12 @@ module-nine {
     grid-template-columns: 1fr;
 
     .navbar {
-        border: 3px solid orange;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
     .hamburger-menu {
-        border: 3px solid green;
         padding: 30px;
     }
 
@@ -40,7 +38,6 @@ module-nine {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            border: 3px dashed black;
             background-image: url('https://peprojects.dev/images/landscape.jpg');
             gap: 20vw;
             padding-bottom: 400px;
@@ -58,12 +55,11 @@ module-nine {
             fill: white;
         }
 
-        .module-text {
+        .landing-copy {
             font-size: 20px;
             margin-top: 20px;
-            border: 3px solid red;
             grid-row: 2 / span 12;
-            grid-column: 1 / span 6;
+            grid-column: 1 / span 8;
         }
     }
 }

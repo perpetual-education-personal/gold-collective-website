@@ -15,7 +15,7 @@ if( have_rows('actions') ):
 
 
         echo "<div class='generic-button'>";
-        echo "<a href='$link[url]?>'>$callToAction</a>";
+        echo "<a href='$link[url]'>$callToAction</a>";
         echo "</div>";
 
     // End loop.

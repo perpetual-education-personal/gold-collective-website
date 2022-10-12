@@ -25,5 +25,5 @@
         </figcaption>
     </figure>
 
-    <p class="module-text">We are destination lifestyle wedding photographers creating time capsules of celebrations for couples that are authentic and classic, but hardy typical. Our weddings are filled with candid moments, fun, and dancing - all of the feels. We live for the occasional late night dip!</p>
+    <p class="landing-copy">We are destination lifestyle wedding photographers creating time capsules of celebrations for couples that are authentic and classic, but hardy typical. Our weddings are filled with candid moments, fun, and dancing - all of the feels. We live for the occasional late night dip!</p>
 </module-nine>

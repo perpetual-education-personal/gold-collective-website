@@ -244,6 +244,10 @@ figcaption p {
   margin-top: 30px;
 }
 
+.landing-copy {
+  font-size: 20px;
+}
+
 .homepage-background {
   background-color: #fff;
 }
@@ -836,13 +840,11 @@ module-nine {
   grid-template-columns: 1fr;
 }
 module-nine .navbar {
-  border: 3px solid orange;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 module-nine .hamburger-menu {
-  border: 3px solid green;
   padding: 30px;
 }
 module-nine .hamburger-menu {
@@ -865,7 +867,6 @@ module-nine figcaption p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 3px dashed black;
     background-image: url("https://peprojects.dev/images/landscape.jpg");
     gap: 20vw;
     padding-bottom: 400px;
@@ -880,12 +881,11 @@ module-nine figcaption p {
   module-nine svg {
     fill: white;
   }
-  module-nine .module-text {
+  module-nine .landing-copy {
     font-size: 20px;
     margin-top: 20px;
-    border: 3px solid red;
     grid-row: 2/span 12;
-    grid-column: 1/span 6;
+    grid-column: 1/span 8;
   }
 }
 module-ten scroll-container {
@@ -1003,6 +1003,7 @@ module-ten figure.two {
 .has-button inner-column {
   display: flex;
   gap: 30px;
+  padding: 0.5rem 1rem;
 }
 
 .generic-button {
@@ -1053,4 +1054,20 @@ figure.three picture {
   .base-template {
     grid-template-columns: repeat(24, 1fr);
   }
+}
+.line {
+  border: 1px solid black;
+  margin-top: 36px;
+  width: 50%;
+}
+
+.example-voices .attention-voice, .example-voices text-content, .example-voices figcaption {
+  margin-top: 20px;
+}
+.example-voices text-content {
+  width: 50%;
+}
+
+.optional a {
+  color: maroon;
 }
