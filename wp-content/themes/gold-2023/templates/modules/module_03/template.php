@@ -10,16 +10,19 @@ $groupThree = get_sub_field('image_three');
 // $titleOne = $groupOne['title'];
 $imageOne = $groupOne['image']['url'] ?? null;
 $altTextOne = $groupOne['alt_text'] ?? null;
+$hasDescriptionOne = $groupOne['has_description'] ?? null;
 $descriptionOne = $groupOne['description'] ?? null;
 
 // $titleTwo = $groupTwo['title'];
 $imageTwo = $groupTwo['image']['url'] ?? null;
 $altTextTwo = $groupTwo['alt_text'] ?? null;
+$hasDescriptionTwo = $groupTwo['has_description'] ?? null;
 $descriptionTwo = $groupTwo['description'] ?? null;
 
 // $titleThree = $groupThree['title'];
 $imageThree = $groupThree['image']['url'] ?? null;
 $altTextThree = $groupThree['alt_text'] ?? null;
+$hasDescriptionThree = $groupThree['has_description'] ?? null;
 $descriptionThree = $groupThree['description'] ?? null;
 
 ?>
@@ -31,31 +34,6 @@ $descriptionThree = $groupThree['description'] ?? null;
         <text-content><?= $intro ?></text-content>
     </div>
 
-    <figure class='one'>
-        <picture>
-            <img src='<?= $imageOne ?>' alt='<?= $altTextOne ?>' loading='lazy'>
-        </picture>
-        <figcaption>
-            <?= $descriptionOne ?>
-        </figcaption>
-    </figure>
-
-    <figure class='two'>
-        <picture>
-            <img src='<?= $imageTwo ?>' alt='<?= $altTextTwo ?>' loading='lazy'>
-        </picture>
-        <figcaption>
-            <?= $descriptionTwo ?>
-        </figcaption>
-    </figure>
-
-    <figure class='three'>
-        <picture>
-            <img src='<?= $imageThree ?>' alt='<?= $altTextThree ?>' loading='lazy'>
-        </picture>
-        <figcaption>
-            <?= $descriptionThree ?>
-        </figcaption>
-    </figure>
+    <?php include(getFile("templates/partials/figures.php")) ?>
 
 </module-three>

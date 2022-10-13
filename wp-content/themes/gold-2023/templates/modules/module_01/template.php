@@ -36,14 +36,8 @@ $descriptionThree = $groupThree['description'] ?? null;
 		<text-content><?= $intro ?></text-content>
 	</div>
 
-	<?php //include('figure-copy.php'); ?>
 
-
-	<?php //include('../figure.php'); ?>
-	<?php //include('gold-2023/templates/partials/figure.php'); ?>
-	<?php //include('templates/partials/figure.php'); ?>
-
-	<?php include(getFile("templates/partials/figure.php")) ?>
+	<?php include(getFile("templates/partials/figures.php")) ?>
 
 
 
