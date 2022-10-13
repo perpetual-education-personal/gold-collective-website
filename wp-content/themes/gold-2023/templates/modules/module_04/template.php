@@ -7,6 +7,7 @@ $groupOne = get_sub_field('image_one');
 // $titleOne = $groupOne['title'];
 $imageOne = $groupOne['image']['url'] ?? null;
 $altTextOne = $groupOne['alt_text'] ?? null;
+$hasDescriptionOne = $groupOne['has_description'] ?? null;
 $descriptionOne = $groupOne['description'] ?? null;
 ?>
 
@@ -22,9 +23,11 @@ $descriptionOne = $groupOne['description'] ?? null;
         </picture>
 
         <inner-column-2>
-            <figcaption>
-                <?= $descriptionOne ?>
-            </figcaption>
+            <?php if($hasDescriptionOne) { ?>
+                <figcaption>
+                    <?= $descriptionOne ?>
+                </figcaption>
+            <?php } ?>
         </inner-column-2>
 
     </figure>
