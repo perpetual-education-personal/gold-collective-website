@@ -1,29 +1,40 @@
 module-six {
 
-    @media(min-width: 500px) {
+    .module-text {
+        grid-column: span 12;
+    }
+
+    .one {
+        margin-left: -1rem;
+        margin-right: -1rem;
+        grid-column: span 12;
+    }
+
+    @media(min-width: 700px) {
 
         .module-text {
-            grid-column: span 9;
-            grid-row: 1 / 2;
+            grid-column: 2/ span 7;
+            grid-row: span 2;
             margin-top: 3vw;
         }
 
-        .one {
+        figure.one {
             grid-column: 6 / 13;
-            grid-row: 2 / 5;
             align-self: start;
+            margin-left: 0;
+            margin-right: 0;
         }
     }
 
     @media(min-width: 1000px) {
 
         .module-text {
-            grid-column: span 9;
-            grid-row: 1 / 2;
+            grid-column: 2/ span 7;
+            grid-row: span 2;
         }
 
-        .one {
-            grid-column: 11 / 25;
+        figure.one {
+            grid-column: 10 / 25;
             grid-row: 2 / 7;
             align-self: start;
         }
