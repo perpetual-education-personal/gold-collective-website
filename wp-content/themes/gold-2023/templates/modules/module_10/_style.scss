@@ -14,6 +14,7 @@ module-ten {
     figure {
         min-width: 80%;
         scroll-snap-align: start;
+        align-self: start;
     }
 
 
@@ -33,10 +34,12 @@ module-ten {
             grid-template-columns: repeat(12, 1fr);
             overflow-x: visible;
             max-height: none;
+            column-gap: 45px;
         }
 
         figure {
             grid-column: span 4;
+
         }
 
         div {
@@ -55,10 +58,11 @@ module-ten {
         }
 
         scroll-container {
-            grid-column: span 14;
+            grid-column: span 15;
             display: grid;
             grid-template-columns: repeat(14, 1fr);
             overflow-x: visible;
+            column-gap: 45px;
         }
 
         figure.one,
