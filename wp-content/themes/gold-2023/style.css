@@ -128,6 +128,22 @@ logo {
   width: 100%;
 }
 
+.base-template {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+}
+
+@media (min-width: 500px) {
+  .base-template {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+@media (min-width: 1000px) {
+  .base-template {
+    grid-template-columns: repeat(24, 1fr);
+  }
+}
 /* display elements */
 a {
   display: block;
@@ -168,12 +184,25 @@ picture img {
   display: block;
   height: auto;
   width: 100%;
+  mix-blend-mode: multiply;
 }
 
 svg {
   display: block;
   width: 100%;
   height: 100%;
+}
+
+figure.one picture {
+  background-color: #f75e5e;
+}
+
+figure.two picture {
+  background-color: #feb839;
+}
+
+figure.three picture {
+  background-color: #ede921;
 }
 
 /* $accesibility */
@@ -202,6 +231,10 @@ h2 {
 
 h2 + text-content {
   margin-top: 10px;
+}
+
+h2 + p {
+  margin-top: 0.5rem;
 }
 
 figcaption p {
@@ -795,23 +828,15 @@ module-six .one {
   }
 }
 
-module-eight .intro {
-  grid-row: 1/2;
-  grid-column: 1/2;
-}
 module-eight figure.one {
-  grid-row: 2/4;
   margin-left: -1rem;
   margin-right: -1rem;
 }
 module-eight figcaption {
-  grid-row: 4;
-  grid-column: 1/2;
   font-size: 12px;
   color: gray;
 }
 module-eight .copy {
-  grid-row: 5;
   grid-column: 1/2;
   display: flex;
   flex-direction: column;
@@ -1080,42 +1105,6 @@ module-ten figure.two {
   width: 100%;
 }
 
-h2 + p {
-  margin-top: 0.5rem;
-}
-
-picture img {
-  mix-blend-mode: multiply;
-}
-
-figure.one picture {
-  background-color: #f75e5e;
-}
-
-figure.two picture {
-  background-color: #feb839;
-}
-
-figure.three picture {
-  background-color: #ede921;
-}
-
-.base-template {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 20px;
-}
-
-@media (min-width: 500px) {
-  .base-template {
-    grid-template-columns: repeat(12, 1fr);
-  }
-}
-@media (min-width: 1000px) {
-  .base-template {
-    grid-template-columns: repeat(24, 1fr);
-  }
-}
 .line {
   border: 1px solid black;
   margin-top: 36px;

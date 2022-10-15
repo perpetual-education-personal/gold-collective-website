@@ -1,32 +1,22 @@
 module-eight {
 
-    .intro {
-        grid-row: 1 / 2;
-        grid-column: 1 / 2;
-    }
-
     figure.one {
-        grid-row: 2 / 4;
         margin-left: -1rem;
         margin-right: -1rem;
     }
 
     figcaption {
-        grid-row: 4;
-        grid-column: 1 /2;
         font-size: 12px;
         color: gray;
         // transform: translateY(-50%);
     }
 
     .copy {
-        grid-row: 5;
         grid-column: 1 / 2;
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
-
 
     .optional {
         display: none;

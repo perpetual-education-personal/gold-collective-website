@@ -53,6 +53,26 @@ logo {
 	width: 100%;
 }
 
+.base-template {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+}
+
+@media (min-width: 500px) {
+    .base-template {
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    .base-template {
+        grid-template-columns: repeat(24, 1fr);
+    }
+}
+
 /* display elements */
 
 a {
@@ -96,12 +116,25 @@ picture img {
 	display: block;
 	height: auto;
 	width: 100%;
+   mix-blend-mode: multiply;
 }
 
 svg {
 	display: block;
 	width: 100%;
 	height: 100%;
+}
+
+figure.one picture {
+    background-color: #f75e5e;
+}
+
+figure.two picture {
+    background-color: #feb839;
+}
+
+figure.three picture {
+    background-color: #ede921;
 }
 
 /* $accesibility */
