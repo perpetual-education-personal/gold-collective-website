@@ -26,7 +26,8 @@
 
             </logo>
 
-            <button class='hamburger-button' id='toggle' rel='hamburger'></button>
+            <button class='hamburger-button' id='toggle' rel='hamburger'>
+            </button>
 
             <?php include('templates/modules/site-menu/template.php') ?>
 
