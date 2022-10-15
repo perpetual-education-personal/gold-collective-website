@@ -42,6 +42,10 @@
         echo "Single highlight";
     }
 
+    if (is_singular('wedding')) {
+        include('templates/pages/wedding.php');
+    }
+
 ?>
 
 <?php get_footer() ?>
