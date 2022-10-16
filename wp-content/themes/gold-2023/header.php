@@ -43,6 +43,26 @@
                     margin-top: 96px;
                 }
             }
+
+            @media(min-width: 912px) {
+
+                .my_extra_menu_class {
+
+                    color: var(--ink);
+                }
+            }
+        </style>
+
+    <?php } ?>
+
+    <?php if (is_page('home')) { ?>
+
+        <style>
+            @media(min-width:700px) {
+                header.site-header .gold-collective {
+                    fill: var(--page);
+                }
+            }
         </style>
 
     <?php } ?>
