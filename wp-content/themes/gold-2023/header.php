@@ -34,4 +34,17 @@
         </inner-column>
     </header>
 
+    <?php
+    if (!is_page('home')) { ?>
+
+        <style>
+            @media(min-width:700px) {
+                main {
+                    margin-top: 96px;
+                }
+            }
+        </style>
+
+    <?php } ?>
+
     <main class="page-content">

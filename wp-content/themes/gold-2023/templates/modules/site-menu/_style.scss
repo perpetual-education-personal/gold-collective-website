@@ -4,6 +4,7 @@ header {
     z-index: 100;
     top: 0;
     background-color: var(--page);
+    position: relative;
 
     inner-column {
         display: flex;
@@ -12,6 +13,7 @@ header {
         padding: 10px;
         justify-content: space-between;
         position: relative;
+
     }
 
     .gold-collective {
@@ -70,6 +72,18 @@ header {
             background-color: rgb(245 195 203);
         }
     }
+
+
+    span {
+        width: 100%;
+        height: 3px;
+        display: block;
+        background-color: white;
+        transition: all 0.25s;
+
+        pointer-events: none;
+    }
+
 
     @media(min-width: 700px) {}
 
@@ -147,16 +161,6 @@ header.display-menu .my_extra_menu_class {
 
 }
 
-
-span {
-    width: 100%;
-    height: 3px;
-    display: block;
-    background-color: white;
-    transition: all 0.25s;
-
-    pointer-events: none;
-}
 
 // .display-menu {
 

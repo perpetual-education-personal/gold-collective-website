@@ -23,6 +23,7 @@ Tags:
 @import "base/type-patterns";
 @import "modules";
 
+
 .line {
 	border: 1px solid black;
 	margin-top: 36px;
@@ -31,18 +32,18 @@ Tags:
 
 .example-voices {
 
-	.attention-voice, text-content, figcaption {
-	margin-top: 20px;
+	.attention-voice,
+	text-content,
+	figcaption {
+		margin-top: 20px;
 
 	}
 
 	text-content {
-		width:50%;
+		width: 50%;
 	}
 }
 
 .optional a {
 	color: maroon;
 }
-
-
