@@ -632,11 +632,6 @@ module-two figure.three picture {
   module-four figure.one {
     grid-column: 1/13;
   }
-  module-four img {
-    object-fit: cover;
-    max-height: 80vh;
-    object-position: top;
-  }
 }
 @media (min-width: 1000px) {
   module-four figure.one {

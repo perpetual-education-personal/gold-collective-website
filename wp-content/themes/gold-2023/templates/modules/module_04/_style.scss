@@ -26,11 +26,11 @@ module-four {
 			grid-column: 1 / 13;
 		}
 
-		img {
-			object-fit: cover;
-			max-height: 80vh;
-			object-position: top;
-		}
+		// img {
+		// 	object-fit: cover;
+		// 	max-height: 80vh;
+		// 	object-position: top;
+		// }
 	}
 
 	@media (min-width: 1000px) {
