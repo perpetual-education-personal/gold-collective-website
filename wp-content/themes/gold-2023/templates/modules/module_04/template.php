@@ -22,14 +22,6 @@ $descriptionOne = $groupOne['description'] ?? null;
             <img src='<?= $imageOne ?>' alt='<?= $altTextOne ?>' loading='lazy'>
         </picture>
 
-        <inner-column-2>
-            <?php if($hasDescriptionOne) { ?>
-                <figcaption>
-                    <?= $descriptionOne ?>
-                </figcaption>
-            <?php } ?>
-        </inner-column-2>
-
     </figure>
 
 </module-four>
