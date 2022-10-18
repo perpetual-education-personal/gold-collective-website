@@ -9,7 +9,7 @@
 
     <meta name='description' content="This is the Gold Collective website.">
     <meta property="og:image" content=" <?php echo get_template_directory_uri() . '/images/meta/meta.png' ?>">
-
+    <script src="//use.typekit.net/zoz2roa.js" async=""></script>
     <?php
     wp_head();
     // WP function to include any styles, scripts, or things before* page load
